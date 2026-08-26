@@ -2,7 +2,7 @@
 
 **Angehender Kaufmann für Digitalisierungsmanagement · Abschluss 02/2027**
 
-Kiel · +49 178 2022466 · [paul-lutzer@hotmail.de](mailto:paul-lutzer@hotmail.de) · linkedin.com/in/paullutze
+Kiel · +49 178 2022466 · [paul-lutzer@hotmail.de](mailto:paul-lutzer@hotmail.de) · linkedin.com/in/paullutzer
 
 ---
 
