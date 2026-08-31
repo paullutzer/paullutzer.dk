@@ -3,184 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lebenslauf — Max Mustermann</title>
+    <title>Lebenslauf — Paul Lutzer</title>
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-        :root {
-            --sidebar: 200px;
-            --text: #111;
-            --gray: #888;
-            --line: #e0e0e0;
-            --green: #10a37f;
-        }
-
+        :root { --sidebar: 200px; --text: #111; --gray: #777; --line: #e0e0e0; --green: #10a37f; }
         html { scroll-behavior: smooth; }
-
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: var(--text);
-            line-height: 1.6;
-            background: #fff;
-        }
-
+        body { font-family: Helvetica, Arial, sans-serif; font-size: 14px; color: var(--text); line-height: 1.6; background: #fff; }
         .layout { display: flex; min-height: 100vh; }
-
-        /* Sidebar */
-        .sidebar {
-            position: fixed;
-            top: 0; left: 0;
-            width: var(--sidebar);
-            height: 100vh;
-            border-right: 1px solid var(--line);
-            padding: 32px 0;
-        }
-
-        .sidebar-name {
-            font-size: 15px;
-            font-weight: 700;
-            padding: 0 24px 24px;
-            border-bottom: 1px solid var(--line);
-            margin-bottom: 16px;
-        }
-
-        .sidebar nav a {
-            display: block;
-            padding: 6px 24px;
-            color: var(--gray);
-            text-decoration: none;
-            font-size: 13px;
-            border-left: 2px solid transparent;
-        }
-
+        .sidebar { position: fixed; top: 0; left: 0; width: var(--sidebar); height: 100vh; border-right: 1px solid var(--line); padding: 32px 0; }
+        .sidebar-name { font-size: 15px; font-weight: 700; padding: 0 24px 24px; border-bottom: 1px solid var(--line); margin-bottom: 16px; }
+        .sidebar nav a { display: block; padding: 6px 24px; color: var(--gray); text-decoration: none; font-size: 13px; border-left: 2px solid transparent; }
         .sidebar nav a:hover { color: var(--text); }
         .sidebar nav a.active { color: var(--text); border-left-color: var(--green); }
-
-        /* Main */
-        .main {
-            margin-left: var(--sidebar);
-            max-width: 640px;
-            padding: 48px 40px 80px;
-        }
-
-        /* Sections */
+        .main { margin-left: var(--sidebar); max-width: 720px; padding: 48px 40px 80px; }
         section { margin-bottom: 56px; }
-
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 4px;
-        }
-
-        .role {
-            color: var(--green);
-            font-size: 16px;
-            margin-bottom: 16px;
-        }
-
-        .intro {
-            color: var(--gray);
-            max-width: 480px;
-            margin-bottom: 12px;
-        }
-
-        .meta {
-            font-size: 12px;
-            color: var(--gray);
-        }
-
-        h2 {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: var(--gray);
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--line);
-            margin-bottom: 20px;
-        }
-
-        /* Experience */
+        h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 4px; }
+        .role { color: var(--green); font-size: 16px; margin-bottom: 16px; }
+        .intro { color: var(--gray); max-width: 600px; margin-bottom: 12px; }
+        .meta { font-size: 12px; color: var(--gray); }
+        h2 { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray); padding-bottom: 10px; border-bottom: 1px solid var(--line); margin-bottom: 20px; }
         .exp { margin-bottom: 28px; }
         .exp:last-child { margin-bottom: 0; }
-
-        .exp-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
-        }
-
-        .exp-top h3 { font-size: 14px; font-weight: 600; }
-
-        .exp-date {
-            font-size: 12px;
-            color: var(--gray);
-            font-family: 'Courier New', monospace;
-        }
-
+        .exp-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; gap: 20px; }
+        .exp-top h3, .edu-top h3 { font-size: 14px; font-weight: 600; }
+        .exp-date, .edu-date { font-size: 12px; color: var(--gray); font-family: 'Courier New', monospace; white-space: nowrap; }
         .exp-company { color: var(--green); font-size: 13px; margin-bottom: 6px; }
-        .exp p { color: var(--gray); font-size: 13px; }
-
-        /* Education */
-        .edu {
-            padding: 14px 0;
-            border-bottom: 1px solid var(--line);
-        }
+        .exp ul { margin: 6px 0 0 17px; }
+        .exp li { color: var(--gray); font-size: 13px; margin-bottom: 3px; }
+        .exp li:last-child { margin-bottom: 0; }
+        .exp a { color: var(--green); text-decoration: none; }
+        .exp a:hover { text-decoration: underline; }
+        .project { padding: 16px 0; }
+        .project h3 { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
+        .project p { color: var(--gray); font-size: 13px; }
+        .edu { padding: 14px 0; border-bottom: 1px solid var(--line); }
         .edu:last-child { border-bottom: none; }
-
-        .edu-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
-        }
-
-        .edu-top h3 { font-size: 14px; font-weight: 600; }
-        .edu-date { font-size: 12px; color: var(--gray); font-family: 'Courier New', monospace; }
+        .edu-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; gap: 20px; }
         .edu p { font-size: 13px; color: var(--gray); }
-
-        /* Skills */
-        .skills {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .skills h3 {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: var(--gray);
-            margin-bottom: 8px;
-        }
-
+        .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .skills h3 { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray); margin-bottom: 8px; }
         .skills p { font-size: 13px; color: var(--gray); }
-
-        /* Languages */
         .langs p { font-size: 13px; color: var(--gray); margin-bottom: 4px; }
-        .langs p:last-child { margin-bottom: 0; }
-
-        /* Contact */
         .contact p { font-size: 13px; margin-bottom: 4px; }
-        .contact p:last-child { margin-bottom: 0; }
         .contact a { color: var(--text); text-decoration: none; }
         .contact a:hover { color: var(--green); }
-
-        /* Responsive */
         @media (max-width: 768px) {
             :root { --sidebar: 48px; }
             .sidebar-name { display: none; }
-            .sidebar nav a {
-                padding: 8px 0;
-                text-align: center;
-                font-size: 0;
-                border-left: none;
-                border-right: 2px solid transparent;
-            }
+            .sidebar nav a { padding: 8px 0; text-align: center; font-size: 0; border-left: none; border-right: 2px solid transparent; }
             .sidebar nav a.active { border-right-color: var(--green); }
             .main { padding: 36px 24px 64px; }
             h1 { font-size: 24px; }
@@ -190,103 +60,84 @@
     </style>
 </head>
 <body>
-
 <div class="layout">
-
     <aside class="sidebar">
-        <div class="sidebar-name">Max Mustermann</div>
+        <div class="sidebar-name">Paul Lutzer</div>
         <nav>
             <a href="#profil" class="active">Profil</a>
             <a href="#erfahrung">Erfahrung</a>
-            <a href="#bildung">Bildung</a>
-            <a href="#skills">Fähigkeiten</a>
+            <a href="#projekte">Projekte</a>
+            <a href="#bildung">Ausbildung</a>
+            <a href="#skills">Kompetenzen</a>
             <a href="#sprachen">Sprachen</a>
-            <a href="#kontakt">Kontakt</a>
         </nav>
     </aside>
-
     <main class="main">
-
         <section id="profil">
-            <h1>Max Mustermann</h1>
-            <p class="role">Full-Stack Entwickler</p>
-            <p class="intro">
-                Ergebnisorientierter Entwickler mit 5+ Jahren Erfahrung in der Konzeption
-                und Umsetzung skalierbarer Webanwendungen.
-            </p>
-            <p class="meta">Berlin, Deutschland · Verfügbar ab sofort</p>
+            <h1>Paul Lutzer</h1>
+            <p class="role">Digitalisierungspraktiker</p>
+            <p class="intro">Digitalisierungspraktiker mit Erfahrung in <strong>Retail IT, POS und Prozessoptimierung</strong>. Verbinde praktische Store-Erfahrung mit technischer Projektarbeit in der Handels-IT. Fokus auf Digitalisierung, Automatisierung und die Schnittstelle zwischen IT und Fachbereichen.</p>
+            <p class="meta">Kiel, Deutschland</p>
         </section>
 
         <section id="erfahrung">
             <h2>Berufserfahrung</h2>
-
             <div class="exp">
-                <div class="exp-top">
-                    <h3>Senior Frontend Entwickler</h3>
-                    <span class="exp-date">2022 — Heute</span>
-                </div>
-                <p class="exp-company">TechCorp GmbH, Berlin</p>
-                <p>Leitung des Frontend-Teams. Architektur eines Design-Systems mit React und TypeScript. Build-Zeit um 60% reduziert durch Migration zu Vite.</p>
+                <div class="exp-top"><h3>Kaufmann für Digitalisierungsmanagement</h3><span class="exp-date">08/2024 — 02/2027</span></div>
+                <p class="exp-company">EDEKA IT — Neumünster</p>
+                <ul>
+                    <li><strong>500-Filialen-Rollout:</strong> Koordination des Kundenkartenscanner-Rollouts inkl. Stakeholder-Reporting</li>
+                    <li><strong>2.500-Geräte-Rollout:</strong> Unterstützung des Windows-11-Rollouts inkl. Anwenderbegleitung</li>
+                    <li><strong>Prozessdigitalisierung:</strong> Analyse und Optimierung von Geschäftsprozessen und IT-Schnittstellen</li>
+                    <li><strong>Requirements &amp; Testing:</strong> Anforderungs-, Stakeholder- und Testmanagement sowie Begleitung von Releases und Migrationen</li>
+                    <li><strong>Testmanagement:</strong> Selbstständiger Aufbau eines Excel-basierten Testmanagements</li>
+                </ul>
             </div>
-
             <div class="exp">
-                <div class="exp-top">
-                    <h3>Full-Stack Entwickler</h3>
-                    <span class="exp-date">2020 — 2022</span>
-                </div>
-                <p class="exp-company">DigitalAgentur Süd, München</p>
-                <p>Entwicklung customer-spezifischer Webapplikationen. REST-APIs mit Node.js, PostgreSQL und CI/CD-Pipelines.</p>
+                <div class="exp-top"><h3>Konsularischer Assistent</h3><span class="exp-date">04/2025 — heute</span></div>
+                <p class="exp-company">Schwedisches Konsulat — Kiel</p>
             </div>
-
             <div class="exp">
-                <div class="exp-top">
-                    <h3>Junior Webentwickler</h3>
-                    <span class="exp-date">2019 — 2020</span>
-                </div>
-                <p class="exp-company">StartUp Labs, Hamburg</p>
-                <p>Umsetzung von Landingpages und Webanwendungen. Einarbeitung in moderne Frameworks und agile Methoden.</p>
+                <div class="exp-top"><h3>Sales Advisor</h3><span class="exp-date">05/2023 — 02/2024</span></div>
+                <p class="exp-company">Hennes &amp; Mauritz — Hamburg</p>
+                <ul>
+                    <li><strong>Prozessoptimierung:</strong> Leitung der Arbeitsgruppe „Smartest Arbeiten“ und Integration optimierter Filialprozesse</li>
+                    <li><strong>POS:</strong> Entwicklung eines Prototyps zur Vermeidung von Duplikaten bei der Warenerfassung — <a href="https://www.figma.com/proto/5HV1gmy8z1k5lCWEFnp1DZ?node-id=0-1&amp;t=rYiwVRyv20ku5II9-6" target="_blank" rel="noopener">Figma-Prototyp</a></li>
+                </ul>
+            </div>
+            <div class="exp">
+                <div class="exp-top"><h3>Volunteer Receptionist</h3><span class="exp-date">02/2022 — 09/2022</span></div>
+                <p class="exp-company">Globalhagen Hostel — Kopenhagen</p>
+            </div>
+        </section>
+
+        <section id="projekte">
+            <h2>Projekte</h2>
+            <div class="project">
+                <h3>Teilautomatisierung eines Serviceprozesses</h3>
+                <p>IHK-Abschlussprojekt zur Digitalisierung und Automatisierung eines bestehenden Serviceprozesses.</p>
             </div>
         </section>
 
         <section id="bildung">
-            <h2>Bildung</h2>
-
+            <h2>Ausbildung</h2>
             <div class="edu">
-                <div class="edu-top">
-                    <h3>B.Sc. Informatik</h3>
-                    <span class="edu-date">2016 — 2019</span>
-                </div>
-                <p>Technische Universität Berlin · Schwerpunkt: Software Engineering</p>
+                <div class="edu-top"><h3>Kaufmann für Digitalisierungsmanagement (IHK)</h3><span class="edu-date">08/2024 — 02/2027</span></div>
+                <p>Ausbildung bei EDEKA IT · Abschluss 02/2027</p>
             </div>
-
             <div class="edu">
-                <div class="edu-top">
-                    <h3>Abitur</h3>
-                    <span class="edu-date">2015 — 2016</span>
-                </div>
-                <p>Gymnasium am Mühlenberg, Hannover · Note 1,3</p>
+                <div class="edu-top"><h3>Informatik</h3><span class="edu-date">2017 — 2022</span></div>
+                <p>Universität Leipzig · ohne Abschluss</p>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Fähigkeiten</h2>
+            <h2>Kompetenzen</h2>
             <div class="skills">
-                <div>
-                    <h3>Frontend</h3>
-                    <p>React · Next.js · Vue.js · TypeScript · Tailwind CSS</p>
-                </div>
-                <div>
-                    <h3>Backend</h3>
-                    <p>Node.js · Express · Python · PostgreSQL · GraphQL</p>
-                </div>
-                <div>
-                    <h3>DevOps</h3>
-                    <p>Docker · Git · CI/CD · AWS · Vercel · Linux</p>
-                </div>
-                <div>
-                    <h3>Sonstiges</h3>
-                    <p>Figma · UI/UX · Scrum · Testing · Storybook</p>
-                </div>
+                <div><h3>Retail &amp; IT</h3><p>POS · Smart Retail · IoT · Prozessoptimierung · Requirements Management</p></div>
+                <div><h3>Projektarbeit</h3><p>Rolloutkoordination · Stakeholder Management · Testmanagement · Migrationen</p></div>
+                <div><h3>Tools &amp; Automation</h3><p>Excel · VBA · Power BI · Jira · Figma · RPA · Automatisierung</p></div>
+                <div><h3>Methoden</h3><p>Prozessanalyse · Digitalisierung · Testing · Schnittstellenmanagement</p></div>
             </div>
         </section>
 
@@ -294,39 +145,22 @@
             <h2>Sprachen</h2>
             <div class="langs">
                 <p>Deutsch — Muttersprache</p>
-                <p>Englisch — C1</p>
-                <p>Französisch — B1</p>
+                <p>Englisch — Verhandlungssicher</p>
+                <p>Schwedisch — Gut</p>
+                <p>Dänisch — Gut</p>
             </div>
         </section>
-
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-            <div class="contact">
-                <p><a href="mailto:max@mustermann.de">max@mustermann.de</a></p>
-                <p><a href="tel:+4915112345678">+49 151 1234 5678</a></p>
-                <p><a href="https://linkedin.com" target="_blank">linkedin.com/in/maxmustermann</a></p>
-                <p><a href="https://github.com" target="_blank">github.com/maxmustermann</a></p>
-            </div>
-        </section>
-
     </main>
-
 </div>
-
 <script>
     const links = document.querySelectorAll('.sidebar nav a');
     const sections = document.querySelectorAll('section');
-
     const obs = new IntersectionObserver(entries => {
         entries.forEach(e => {
-            if (e.isIntersecting) {
-                links.forEach(l => l.classList.toggle('active', l.href.split('#')[1] === e.target.id));
-            }
+            if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
         });
     }, { rootMargin: '-20% 0px -60% 0px' });
-
     sections.forEach(s => obs.observe(s));
 </script>
-
 </body>
 </html>
