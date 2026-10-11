@@ -116,13 +116,22 @@ Hennes & Mauritz · Hamborg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Forskellige jobs og studier
+Frivilligt arbejde
 
 ## experience.role.5.company
-København · Augsburg
+København · Københavns Universitet · ActionAid Denmark
 
 ## experience.role.5.date
-02/2022 – 04/2023
+02/2022 – 10/2022
+
+## experience.role.6.title
+Sprogstudier
+
+## experience.role.6.company
+Universität Augsburg · engelsk, fransk og svensk
+
+## experience.role.6.date
+2022–2023
 
 ## experience.bullet.1
 Koordinerede udrulningen af kundekortscannere i cirka 500 EDEKA-butikker i forbindelse med lanceringen af PAYBACK/EDEKA-appen; projektopfølgning og rapportering til interessenter
@@ -139,13 +148,25 @@ Støtte til Windows 11-udrulning på cirka 2.500 enheder inklusive hjælp til br
 Udvikling af en delvist automatiseret serviceløsning med RPA
 
 ## experience.bullet.6
+Hjalp med konsulære henvendelser og administrative opgaver i en tysk-svensk sammenhæng
+
+## experience.bullet.7
 Udvikling af en prototype, der forebygger dobbeltregistrering ved varemodtagelse
 
 ## experience.prototypeLink
 Se Figma-prototype ↗
 
-## experience.bullet.7
+## experience.bullet.8
 Ledelse af arbejdsgruppen ”Smartest Arbeiten” og indarbejdelse af forbedrede butiksprocesser
+
+## experience.bullet.9
+Koordinerede det tysksprogede bord på sprog-caféen i Studenterhuset
+
+## experience.bullet.10
+Tog imod internationale gæster med check-in og check-out, håndterede betalinger og havde lejlighedsvis ansvar for hostellets aftendrift
+
+## experience.bullet.11
+Hjalp til på caféen med at tilberede drikke, betjene gæster samt åbne og lukke
 
 ## projects.title
 Projekter

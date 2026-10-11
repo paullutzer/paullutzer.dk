@@ -116,13 +116,22 @@ Hennes & Mauritz · Hamburg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Various roles and studies
+Volunteering
 
 ## experience.role.5.company
-Copenhagen · Augsburg
+Copenhagen · University of Copenhagen · ActionAid Denmark
 
 ## experience.role.5.date
-02/2022 – 04/2023
+02/2022 – 10/2022
+
+## experience.role.6.title
+Language studies
+
+## experience.role.6.company
+University of Augsburg · English, French, and Swedish
+
+## experience.role.6.date
+2022–2023
 
 ## experience.bullet.1
 Coordinated the rollout of customer card scanners across around 500 EDEKA stores as part of the PAYBACK/EDEKA app launch; project tracking and stakeholder reporting
@@ -139,13 +148,25 @@ Supported the Windows 11 rollout across around 2,500 devices, including user sup
 Developed a partially automated service process solution using RPA
 
 ## experience.bullet.6
+Supported consular enquiries and administrative processes in a German-Swedish context
+
+## experience.bullet.7
 Developed a prototype to prevent duplicate entries when recording goods
 
 ## experience.prototypeLink
 View Figma prototype ↗
 
-## experience.bullet.7
+## experience.bullet.8
 Led the “Smartest Arbeiten” working group and integrated improved store processes
+
+## experience.bullet.9
+Coordinated the German-language table at the language café in Studenterhuset
+
+## experience.bullet.10
+Welcomed international guests, managed check-ins and check-outs and payments, and occasionally oversaw evening hostel operations
+
+## experience.bullet.11
+Worked in the café preparing drinks, serving guests, and opening and closing
 
 ## projects.title
 Projects
