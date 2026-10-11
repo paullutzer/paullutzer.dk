@@ -142,6 +142,9 @@ Entwicklung einer teilautomatisierten Serviceprozesslösung mit RPA
 ## experience.bullet.6
 Eigene Entwicklung eines Prototyps zur Vermeidung von Duplikaten bei der Warenerfassung
 
+## experience.prototypeLink
+Figma-Prototyp ansehen ↗
+
 ## experience.bullet.7
 Leitung der Arbeitsgruppe „Smartest Arbeiten“ und Integration optimierter Filialprozesse
 

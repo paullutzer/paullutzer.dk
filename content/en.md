@@ -142,6 +142,9 @@ Developed a partially automated service process solution using RPA
 ## experience.bullet.6
 Developed a prototype to prevent duplicate entries when recording goods
 
+## experience.prototypeLink
+View Figma prototype ↗
+
 ## experience.bullet.7
 Led the “Smartest Arbeiten” working group and integrated improved store processes
 
