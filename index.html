@@ -68,17 +68,67 @@
     }
 
 
-    .language-picker {
-      min-height: 38px;
-      padding: 6px 30px 6px 12px;
+    .language-control { position: relative; flex: 0 0 auto; }
+
+    .language-toggle {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
       border: 1px solid var(--line);
-      border-radius: 999px;
+      border-radius: 50%;
       background: #fff;
       color: var(--ink);
       font: inherit;
-      font-size: 13px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+
+    .language-toggle:hover { border-color: var(--secondary); }
+    .language-toggle:active { transform: scale(.96); }
+    .language-toggle:focus-visible,
+    .language-option:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 3px;
+    }
+
+    .language-menu {
+      position: absolute;
+      z-index: 5;
+      top: calc(100% + 8px);
+      right: 0;
+      min-width: 208px;
+      padding: 6px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+    }
+
+    .language-menu[hidden] { display: none; }
+
+    .language-option {
+      display: flex;
+      width: 100%;
+      min-height: 42px;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 10px;
+      border: 0;
+      border-radius: 10px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 14px;
+      text-align: left;
       cursor: pointer;
     }
+
+    .language-option:hover { color: var(--blue); }
+    .language-option[aria-checked="true"] { font-weight: 600; }
+    .language-option .language-flag { font-size: 18px; }
+    .language-check { margin-left: auto; color: var(--blue); }
 
     .navigation {
       display: flex;
@@ -393,7 +443,7 @@
         gap: 10px 16px;
       }
 
-      .language-picker { flex: 0 0 auto; }
+      .language-control { align-self: flex-end; margin-top: -54px; }
 
       .hero {
         grid-template-columns: 1fr;
@@ -449,13 +499,17 @@
         <a href="#profil">Profil</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
-      <label class="visually-hidden" for="language-picker">Sprache</label>
-      <select class="language-picker" id="language-picker" aria-label="Sprache">
-        <option value="de">Deutsch</option>
-        <option value="da">Dansk</option>
-        <option value="sv">Svenska</option>
-        <option value="en">English</option>
-      </select>
+      <div class="language-control">
+        <button class="language-toggle" id="language-toggle" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="Sprache: Deutsch">
+          <span class="language-current-flag" aria-hidden="true">🇩🇪</span>
+        </button>
+        <div class="language-menu" id="language-menu" role="menu" aria-label="Sprache" hidden>
+          <button class="language-option" type="button" role="menuitemradio" aria-checked="true" data-language="de"><span class="language-flag" aria-hidden="true">🇩🇪</span><span class="language-name">Deutsch</span><span class="language-check" aria-hidden="true">✓</span></button>
+          <button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-language="da"><span class="language-flag" aria-hidden="true">🇩🇰</span><span class="language-name">Dänisch</span><span class="language-check" aria-hidden="true"></span></button>
+          <button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-language="sv"><span class="language-flag" aria-hidden="true">🇸🇪</span><span class="language-name">Schwedisch</span><span class="language-check" aria-hidden="true"></span></button>
+          <button class="language-option" type="button" role="menuitemradio" aria-checked="false" data-language="en"><span class="language-flag" aria-hidden="true">🇬🇧</span><span class="language-name">Englisch</span><span class="language-check" aria-hidden="true"></span></button>
+        </div>
+      </div>
     </header>
 
     <main id="top">
@@ -631,7 +685,7 @@
     de: {
       title: "Paul Lutzer — Digitalisierung im Arbeitsalltag",
       description: "Paul Lutzer arbeitet an der Schnittstelle von Retail IT, Digitalisierung und Prozessen.",
-      language: "Sprache", navLabel: "Hauptnavigation", factsLabel: "Ausgewählte Erfahrungen", nav: ["Erfahrung", "Projekte", "Profil", "Kontakt"],
+      language: "Sprache", languageNames: { de: "Deutsch", da: "Dänisch", sv: "Schwedisch", en: "Englisch" }, navLabel: "Hauptnavigation", factsLabel: "Ausgewählte Erfahrungen", nav: ["Erfahrung", "Projekte", "Profil", "Kontakt"],
       hero: ["Digitalisierung · Retail IT · Kiel", "Technologie, die im Alltag funktioniert.", "Ich verbinde IT, Prozesse und Menschen — von der Idee bis zur Umsetzung in der Filiale.", "Meine Projekte", "Kontakt aufnehmen", "Paul Lutzer · Kiel"],
       facts: ["500 Filialen", "im Rahmen eines Rollouts begleitet", "2.500 Geräte", "im Windows-11-Rollout", "Retail IT", "Prozesse verständlich und praktikabel machen"],
       experience: ["Berufserfahrung", "Projekte gelingen, wenn technische Anforderungen und der Arbeitsalltag der Menschen zusammenpassen.", "Kaufmann für Digitalisierungsmanagement", "Konsularischer Assistent", "Sales Advisor", "Volunteer Receptionist", "EDEKA IT · Neumünster", "Schwedisches Konsulat · Kiel", "H&M · Hamburg", "Globalhagen Hostel · Kopenhagen", "Rollout in 500 Filialen und von 2.500 Geräten im Rahmen von Windows 11", "Analyse und Optimierung von Geschäftsprozessen", "Requirements-, Stakeholder- und Testmanagement", "Begleitung von Releases und Migrationen", "Leitung der Arbeitsgruppe „Smartest Arbeiten“", "Optimierung von Filialprozessen", "Entwicklung eines POS-Prototyps", "04/2025 – heute"],
@@ -642,7 +696,7 @@
     da: {
       title: "Paul Lutzer — Digitalisering i hverdagen",
       description: "Paul Lutzer arbejder i krydsfeltet mellem retail IT, digitalisering og processer.",
-      language: "Sprog", navLabel: "Hovednavigation", factsLabel: "Udvalgte erfaringer", nav: ["Erfaring", "Projekter", "Profil", "Kontakt"],
+      language: "Sprog", languageNames: { de: "Tysk", da: "Dansk", sv: "Svensk", en: "Engelsk" }, navLabel: "Hovednavigation", factsLabel: "Udvalgte erfaringer", nav: ["Erfaring", "Projekter", "Profil", "Kontakt"],
       hero: ["Digitalisering · Retail IT · Kiel", "Teknologi, der fungerer i hverdagen.", "Jeg forbinder IT, processer og mennesker — fra idé til implementering i butikkerne.", "Mine projekter", "Tag kontakt", "Paul Lutzer · Kiel"],
       facts: ["500 butikker", "deltog i udrulningen", "2.500 enheder", "i Windows 11-udrulningen", "Retail IT", "gøre processer forståelige og praktiske"],
       experience: ["Erhvervserfaring", "Projekter lykkes, når tekniske krav passer til menneskers hverdag på arbejdet.", "Kontoruddannet inden for digitaliseringsledelse", "Konsulær assistent", "Salgsrådgiver", "Frivillig receptionist", "EDEKA IT · Neumünster", "Sveriges konsulat · Kiel", "H&M · Hamborg", "Globalhagen Hostel · København", "Udrulning i 500 butikker og af 2.500 enheder i forbindelse med Windows 11", "Analyse og optimering af forretningsprocesser", "Krav-, interessent- og teststyring", "Koordinering af releases og migreringer", "Ledelse af arbejdsgruppen “Smartest Arbeiten”", "Optimering af butiksprocesser", "Udvikling af en POS-prototype", "04/2025 – nu"],
@@ -653,7 +707,7 @@
     sv: {
       title: "Paul Lutzer — Digitalisering i vardagen",
       description: "Paul Lutzer arbetar i gränslandet mellan retail IT, digitalisering och processer.",
-      language: "Språk", navLabel: "Huvudnavigation", factsLabel: "Utvalda erfarenheter", nav: ["Erfarenhet", "Projekt", "Profil", "Kontakt"],
+      language: "Språk", languageNames: { de: "Tyska", da: "Danska", sv: "Svenska", en: "Engelska" }, navLabel: "Huvudnavigation", factsLabel: "Utvalda erfarenheter", nav: ["Erfarenhet", "Projekt", "Profil", "Kontakt"],
       hero: ["Digitalisering · Retail IT · Kiel", "Teknik som fungerar i vardagen.", "Jag förenar IT, processer och människor — från idé till genomförande i butik.", "Mina projekt", "Ta kontakt", "Paul Lutzer · Kiel"],
       facts: ["500 butiker", "deltog i utrullningen", "2 500 enheter", "i Windows 11-utrullningen", "Retail IT", "göra processer begripliga och praktiska"],
       experience: ["Yrkeserfarenhet", "Projekt lyckas när tekniska krav fungerar tillsammans med människors vardag på jobbet.", "Kontorsutbildad inom digitaliseringshantering", "Konsulär assistent", "Säljrådgivare", "Volontärreceptionist", "EDEKA IT · Neumünster", "Sveriges konsulat · Kiel", "H&M · Hamburg", "Globalhagen Hostel · Köpenhamn", "Utrullning i 500 butiker och av 2 500 enheter i samband med Windows 11", "Analys och optimering av affärsprocesser", "Krav-, intressent- och testhantering", "Samordning av releaser och migreringar", "Ledde arbetsgruppen ”Smartest Arbeiten”", "Optimering av butiksprocesser", "Utveckling av en POS-prototyp", "04/2025 – nu"],
@@ -664,7 +718,7 @@
     en: {
       title: "Paul Lutzer — Digitalisation at work",
       description: "Paul Lutzer works at the intersection of retail IT, digitalisation, and processes.",
-      language: "Language", navLabel: "Main navigation", factsLabel: "Selected experience", nav: ["Experience", "Projects", "Profile", "Contact"],
+      language: "Language", languageNames: { de: "German", da: "Danish", sv: "Swedish", en: "English" }, navLabel: "Main navigation", factsLabel: "Selected experience", nav: ["Experience", "Projects", "Profile", "Contact"],
       hero: ["Digitalisation · Retail IT · Kiel", "Technology that works in practice.", "I connect IT, processes, and people — from the initial idea through implementation in stores.", "My projects", "Get in touch", "Paul Lutzer · Kiel"],
       facts: ["500 stores", "rollout experience", "2,500 devices", "in the Windows 11 rollout", "Retail IT", "making processes clear and practical"],
       experience: ["Experience", "Projects work when technical requirements fit the day-to-day reality of the people using them.", "Digitalisation Management Specialist", "Consular Assistant", "Sales Advisor", "Volunteer Receptionist", "EDEKA IT · Neumünster", "Swedish Consulate · Kiel", "H&M · Hamburg", "Globalhagen Hostel · Copenhagen", "Windows 11 rollout across 500 stores and 2,500 devices", "Analysed and improved business processes", "Requirements, stakeholder, and test management", "Supported releases and migrations", "Led the “Smartest Arbeiten” working group", "Improved store processes", "Developed a POS prototype", "04/2025 – present"],
@@ -690,10 +744,17 @@
     document.querySelector('meta[name="description"]').content = t.description;
     document.querySelector(".navigation").setAttribute("aria-label", t.navLabel);
     document.querySelector(".facts").setAttribute("aria-label", t.factsLabel);
-    document.querySelectorAll("label[for='language-picker'], #language-picker").forEach(el => {
-      if (el.tagName === "LABEL") el.textContent = t.language;
-      else el.setAttribute("aria-label", t.language);
+    const toggle = document.getElementById("language-toggle");
+    toggle.setAttribute("aria-label", t.language + ": " + t.languageNames[lang]);
+    document.querySelector("#language-menu").setAttribute("aria-label", t.language);
+    document.querySelectorAll(".language-option").forEach(option => {
+      const code = option.dataset.language;
+      option.querySelector(".language-name").textContent = t.languageNames[code];
+      option.setAttribute("aria-label", t.languageNames[code]);
+      option.setAttribute("aria-checked", String(code === lang));
+      option.querySelector(".language-check").textContent = code === lang ? "✓" : "";
     });
+    document.querySelector(".language-current-flag").textContent = { de: "🇩🇪", da: "🇩🇰", sv: "🇸🇪", en: "🇬🇧" }[lang];
     for (const [group, selectors] of Object.entries(groups)) {
       const raw = t[group];
       let values;
@@ -718,16 +779,35 @@
       });
     }
   }
-  const picker = document.getElementById("language-picker");
+  const toggle = document.getElementById("language-toggle");
+  const menu = document.getElementById("language-menu");
+  const options = [...document.querySelectorAll(".language-option")];
   let initial = "de";
   try { initial = localStorage.getItem("paullutzer-language") || "de"; } catch (_) {}
   if (!translations[initial]) initial = "de";
-  picker.value = initial;
   apply(initial);
-  picker.addEventListener("change", () => {
-    const lang = picker.value;
+  function closeMenu(restoreFocus = false) {
+    menu.hidden = true;
+    toggle.setAttribute("aria-expanded", "false");
+    if (restoreFocus) toggle.focus();
+  }
+  toggle.addEventListener("click", () => {
+    const opening = menu.hidden;
+    menu.hidden = !opening;
+    toggle.setAttribute("aria-expanded", String(opening));
+    if (opening) options.find(option => option.dataset.language === document.documentElement.lang)?.focus();
+  });
+  options.forEach(option => option.addEventListener("click", () => {
+    const lang = option.dataset.language;
     apply(lang);
     try { localStorage.setItem("paullutzer-language", lang); } catch (_) {}
+    closeMenu(true);
+  }));
+  document.addEventListener("click", event => {
+    if (!event.target.closest(".language-control")) closeMenu();
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && !menu.hidden) closeMenu(true);
   });
 })();
 </script>
