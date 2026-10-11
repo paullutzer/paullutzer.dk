@@ -2,7 +2,7 @@
 Markus Paul Wilhelm Lutzer — Digitalisierung im Arbeitsalltag
 
 ## meta.description
-Markus Paul Wilhelm Lutzer arbeitet an der Schnittstelle von Retail IT, Digitalisierung und Prozessen.
+Angehender Kaufmann für Digitalisierungsmanagement mit Erfahrung an der Schnittstelle von Business, IT und Anwendern.
 
 ## language.label
 Sprache
@@ -59,25 +59,25 @@ Markus Paul Wilhelm Lutzer · Kiel
 500 Filialen
 
 ## facts.one.copy
-im Rahmen eines Rollouts begleitet
+im Rahmen eines Rollouts koordiniert
 
 ## facts.two.title
 2.500 Geräte
 
 ## facts.two.copy
-im Windows-11-Rollout
+im Windows-11-Rollout begleitet
 
 ## facts.three.title
-Retail IT
+Business × IT
 
 ## facts.three.copy
-Prozesse verständlich und praktikabel machen
+Anforderungen in praktikable Abläufe übersetzen
 
 ## experience.title
 Berufserfahrung
 
 ## experience.intro
-Projekte gelingen, wenn technische Anforderungen und der Arbeitsalltag der Menschen zusammenpassen.
+Erfahrung an der Schnittstelle von Business, IT und Anwendern — mit Blick auf Lösungen, die im Arbeitsalltag funktionieren.
 
 ## experience.role.1.title
 Kaufmann für Digitalisierungsmanagement
@@ -85,47 +85,65 @@ Kaufmann für Digitalisierungsmanagement
 ## experience.role.1.company
 EDEKA IT · Neumünster
 
+## experience.role.1.date
+08/2024 – 01/2027
+
 ## experience.role.2.title
 Konsularischer Assistent
 
 ## experience.role.2.company
 Schwedisches Konsulat · Kiel
 
+## experience.role.2.date
+seit 04/2025
+
 ## experience.role.3.title
-Sales Advisor
+Aushilfe im Verkauf
 
 ## experience.role.3.company
-H&M · Hamburg
+EDEKA Riechey · Fehmarn
+
+## experience.role.3.date
+04/2024 – 08/2024
 
 ## experience.role.4.title
-Volunteer Receptionist
+Sales Advisor
 
 ## experience.role.4.company
-Globalhagen Hostel · Kopenhagen
+Hennes & Mauritz · Hamburg
+
+## experience.role.4.date
+05/2023 – 04/2024
+
+## experience.role.5.title
+Verschiedene Tätigkeiten & Studium
+
+## experience.role.5.company
+Kopenhagen · Augsburg
+
+## experience.role.5.date
+02/2022 – 04/2023
 
 ## experience.bullet.1
-Rollout in 500 Filialen und von 2.500 Geräten im Rahmen von Windows 11
+Koordination eines Kundenkartenscanner-Rollouts für rund 500 Filialen inklusive Stakeholder-Reporting
 
 ## experience.bullet.2
-Analyse und Optimierung von Geschäftsprozessen
+Aufnahme und Management von Anforderungen, Testmanagement sowie Begleitung von Releases und Migrationen
 
 ## experience.bullet.3
-Requirements-, Stakeholder- und Testmanagement
+Analyse und Optimierung bereichsübergreifender Geschäftsprozesse und IT-Schnittstellen
 
 ## experience.bullet.4
-Begleitung von Releases und Migrationen
+Unterstützung des Windows-11-Rollouts für rund 2.500 Geräte inklusive Anwenderbegleitung
 
 ## experience.bullet.5
-Leitung der Arbeitsgruppe „Smartest Arbeiten“
+Entwicklung einer teilautomatisierten Serviceprozesslösung mit RPA
 
 ## experience.bullet.6
-Optimierung von Filialprozessen
+Eigene Entwicklung eines Prototyps zur Vermeidung von Duplikaten bei der Warenerfassung
 
 ## experience.bullet.7
-Entwicklung eines POS-Prototyps
-
-## experience.currentDate
-04/2025 – heute
+Leitung der Arbeitsgruppe „Smartest Arbeiten“ und Integration optimierter Filialprozesse
 
 ## projects.title
 Projekte
@@ -134,16 +152,16 @@ Projekte
 Aus konkreten Situationen entstanden — mit Blick darauf, was Menschen bei ihrer Arbeit wirklich brauchen.
 
 ## project.one.type
-H&M · Point of Sale
+UX · Figma-Prototyp
 
 ## project.one.title
-Fehler bei der Warenerfassung vermeiden
+Duplicate Handling
 
 ## project.one.description
-Ein Figma-Prototyp, der doppelte Erfassungen im Store verhindern soll. Der Ansatz entstand aus einem konkreten Problem im Arbeitsalltag.
+Ein Prototyp zur Vermeidung doppelter Einträge bei der Warenerfassung. Entstanden aus einer konkreten Beobachtung im Arbeitsalltag.
 
 ## project.one.link
-Prototyp ansehen ↗
+Figma-Prototyp ansehen ↗
 
 ## project.two.type
 IHK · Abschlussprojekt
@@ -161,33 +179,45 @@ In Arbeit
 Profil
 
 ## profile.intro
-Kaufmännisches Denken, technisches Interesse und Erfahrung aus dem direkten Umfeld von Filialen und Serviceprozessen.
+Angehender Kaufmann für Digitalisierungsmanagement (Abschluss 01/2027) mit Erfahrung an der Schnittstelle von Business, IT und Anwendern. Praxis in Softwareeinführung, Requirements, Testing, Prozessdigitalisierung und IT-Rollouts im Handelsumfeld.
 
 ## profile.education.label
 Ausbildung
 
 ## profile.education.copy
 Kaufmann für Digitalisierungsmanagement
-IHK-Abschluss · 02/2027
+IHK-Abschluss · 01/2027
 
 ## profile.study.label
 Studium
 
 ## profile.study.copy
 Informatik
-Universität Leipzig · 2017–2022
+Universität Leipzig · 10/2017–02/2022 · ohne Abschluss
+
+## profile.technologies.label
+Technologien
+
+## profile.technologies.copy
+Excel · Power BI · Jira · Figma · RPA · IoT
+
+## profile.business.label
+Business & Applications
+
+## profile.business.copy
+Prozessanalyse und -optimierung · Softwareeinführung · Requirements · Testing
+
+## profile.project.label
+Projekt & Business-IT
+
+## profile.project.copy
+IT-Projekt- und Rollout-Koordination · Stakeholder Management · Anwenderbegleitung · Smart Retail
 
 ## profile.languages.label
 Sprachen
 
 ## profile.languages.copy
-Deutsch · Englisch · Schwedisch · Dänisch
-
-## profile.tools.label
-Werkzeuge und Themen
-
-## profile.tools.copy
-Excel · VBA · Power BI · Jira · Figma · RPA · IoT · POS
+Deutsch (Muttersprache) · Englisch (verhandlungssicher) · Schwedisch (gut) · Dänisch (gut)
 
 ## contact.title
 Lass uns sprechen.
@@ -200,3 +230,6 @@ E-Mail schreiben
 
 ## footer.name
 Markus Paul Wilhelm Lutzer · Kiel
+
+## footer.linkedin
+LinkedIn-Profil ↗
