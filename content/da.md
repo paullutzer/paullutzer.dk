@@ -142,6 +142,9 @@ Udvikling af en delvist automatiseret serviceløsning med RPA
 ## experience.bullet.6
 Udvikling af en prototype, der forebygger dobbeltregistrering ved varemodtagelse
 
+## experience.prototypeLink
+Se Figma-prototype ↗
+
 ## experience.bullet.7
 Ledelse af arbejdsgruppen ”Smartest Arbeiten” og indarbejdelse af forbedrede butiksprocesser
 
