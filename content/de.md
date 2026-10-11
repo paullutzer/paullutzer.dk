@@ -37,6 +37,12 @@ Profil
 ## navigation.contact
 Kontakt
 
+## navigation.menuOpen
+Menü öffnen
+
+## navigation.menuClose
+Menü schließen
+
 ## hero.eyebrow
 Digitalisierung · Retail IT · Kiel
 
