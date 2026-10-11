@@ -2,7 +2,7 @@
 Markus Paul Wilhelm Lutzer — Digitalisation at work
 
 ## meta.description
-Markus Paul Wilhelm Lutzer works at the intersection of retail IT, digitalisation, and processes.
+Upcoming digitalisation management specialist with experience at the intersection of business, IT, and end users.
 
 ## language.label
 Language
@@ -59,31 +59,34 @@ Markus Paul Wilhelm Lutzer · Kiel
 500 stores
 
 ## facts.one.copy
-rollout experience
+coordinated in a rollout
 
 ## facts.two.title
 2,500 devices
 
 ## facts.two.copy
-in the Windows 11 rollout
+supported in the Windows 11 rollout
 
 ## facts.three.title
-Retail IT
+Business × IT
 
 ## facts.three.copy
-making processes clear and practical
+turning requirements into practical workflows
 
 ## experience.title
 Experience
 
 ## experience.intro
-Projects work when technical requirements fit the day-to-day reality of the people using them.
+Experience at the intersection of business, IT, and end users, focused on solutions that work in day-to-day operations.
 
 ## experience.role.1.title
-Digitalisation Management Specialist
+Digitalisation Management Trainee
 
 ## experience.role.1.company
 EDEKA IT · Neumünster
+
+## experience.role.1.date
+08/2024 – 01/2027
 
 ## experience.role.2.title
 Consular Assistant
@@ -91,41 +94,56 @@ Consular Assistant
 ## experience.role.2.company
 Swedish Consulate · Kiel
 
+## experience.role.2.date
+since 04/2025
+
 ## experience.role.3.title
-Sales Advisor
+Retail Assistant
 
 ## experience.role.3.company
-H&M · Hamburg
+EDEKA Riechey · Fehmarn
+
+## experience.role.3.date
+04/2024 – 08/2024
 
 ## experience.role.4.title
-Volunteer Receptionist
+Sales Advisor
 
 ## experience.role.4.company
-Globalhagen Hostel · Copenhagen
+Hennes & Mauritz · Hamburg
+
+## experience.role.4.date
+05/2023 – 04/2024
+
+## experience.role.5.title
+Various roles and studies
+
+## experience.role.5.company
+Copenhagen · Augsburg
+
+## experience.role.5.date
+02/2022 – 04/2023
 
 ## experience.bullet.1
-Windows 11 rollout across 500 stores and 2,500 devices
+Coordinated a customer card scanner rollout across around 500 stores, including stakeholder reporting
 
 ## experience.bullet.2
-Analysed and improved business processes
+Gathered and managed requirements, managed testing, and supported releases and migrations
 
 ## experience.bullet.3
-Requirements, stakeholder, and test management
+Analysed and improved cross-functional business processes and IT interfaces
 
 ## experience.bullet.4
-Supported releases and migrations
+Supported the Windows 11 rollout across around 2,500 devices, including user support
 
 ## experience.bullet.5
-Led the “Smartest Arbeiten” working group
+Developed a partially automated service process solution using RPA
 
 ## experience.bullet.6
-Improved store processes
+Developed a prototype to prevent duplicate entries when recording goods
 
 ## experience.bullet.7
-Developed a POS prototype
-
-## experience.currentDate
-04/2025 – present
+Led the “Smartest Arbeiten” working group and integrated improved store processes
 
 ## projects.title
 Projects
@@ -134,16 +152,16 @@ Projects
 Built from real situations, with a focus on what people need to do their work well.
 
 ## project.one.type
-H&M · Point of Sale
+UX · Figma prototype
 
 ## project.one.title
-Prevent errors when recording goods
+Duplicate Handling
 
 ## project.one.description
-A Figma prototype designed to prevent duplicate entries in store. The idea came from a specific day-to-day problem.
+A prototype to prevent duplicate entries when recording goods, based on a specific observation from day-to-day work.
 
 ## project.one.link
-View prototype ↗
+View Figma prototype ↗
 
 ## project.two.type
 IHK · Final project
@@ -161,33 +179,45 @@ In progress
 Profile
 
 ## profile.intro
-Business perspective, technical curiosity, and experience close to store teams and service processes.
+Upcoming digitalisation management specialist (qualification expected 01/2027) with experience at the intersection of business, IT, and end users. Practical experience in software implementation, requirements, testing, process digitalisation, and IT rollouts in retail.
 
 ## profile.education.label
-Training
+Vocational training
 
 ## profile.education.copy
 Digitalisation Management Specialist
-IHK qualification · 02/2027
+IHK qualification · 01/2027
 
 ## profile.study.label
 Studies
 
 ## profile.study.copy
 Computer Science
-Leipzig University · 2017–2022
+Leipzig University · 10/2017–02/2022 · no degree
+
+## profile.technologies.label
+Technologies
+
+## profile.technologies.copy
+Excel · Power BI · Jira · Figma · RPA · IoT
+
+## profile.business.label
+Business & Applications
+
+## profile.business.copy
+Process analysis and optimisation · Software implementation · Requirements · Testing
+
+## profile.project.label
+Projects & Business IT
+
+## profile.project.copy
+IT project and rollout coordination · Stakeholder management · User support · Smart retail
 
 ## profile.languages.label
 Languages
 
 ## profile.languages.copy
-German · English · Swedish · Danish
-
-## profile.tools.label
-Tools and topics
-
-## profile.tools.copy
-Excel · VBA · Power BI · Jira · Figma · RPA · IoT · POS
+German (native) · English (professional proficiency) · Swedish (good) · Danish (good)
 
 ## contact.title
 Let’s talk.
@@ -200,3 +230,6 @@ Send an email
 
 ## footer.name
 Markus Paul Wilhelm Lutzer · Kiel
+
+## footer.linkedin
+LinkedIn profile ↗
