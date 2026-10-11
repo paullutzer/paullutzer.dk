@@ -128,7 +128,7 @@ Köpenhamn · Köpenhamns universitet · ActionAid Denmark
 Språkstudier
 
 ## experience.role.6.company
-Universität Augsburg
+Universität Augsburg · engelska, franska och svenska
 
 ## experience.role.6.date
 2022–2023
