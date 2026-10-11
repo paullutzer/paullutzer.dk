@@ -792,10 +792,10 @@
         node.getAnimations().forEach(animation => animation.cancel());
         const animation = node.animate(
           [
-            { opacity: 0, transform: "translateY(4px)" },
+            { opacity: 0.35, transform: "translateY(2px)" },
             { opacity: 1, transform: "translateY(0)" }
           ],
-          { duration: 220, delay: Math.min(index * 5, 75), easing: "cubic-bezier(.2, .65, .3, 1)", fill: "both" }
+          { duration: 380, delay: Math.min(index * 4, 48), easing: "cubic-bezier(.22, 1, .36, 1)", fill: "both" }
         );
         animation.onfinish = () => animation.cancel();
       });
