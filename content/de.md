@@ -125,8 +125,7 @@ Kopenhagen · Augsburg
 02/2022 – 04/2023
 
 ## experience.bullet.1
-Koordination eines Kundenkartenscanner-Rollouts für rund 500 Filialen inklusive Stakeholder-Reporting
-
+Koordination des Kundenkartenscanner-Rollouts in rund 500 EDEKA-Filialen im Zuge des Starts der PAYBACK/EDEKA-App; Projekttracking und Stakeholder-Reporting
 ## experience.bullet.2
 Aufnahme und Management von Anforderungen, Testmanagement sowie Begleitung von Releases und Migrationen
 
@@ -155,14 +154,12 @@ Projekte
 Aus konkreten Situationen entstanden — mit Blick darauf, was Menschen bei ihrer Arbeit wirklich brauchen.
 
 ## project.one.type
-UX · Figma-Prototyp
-
+H&M · Point of Sale · Sep.–Nov. 2023
 ## project.one.title
 Duplicate Handling
 
 ## project.one.description
-Ein Prototyp zur Vermeidung doppelter Einträge bei der Warenerfassung. Entstanden aus einer konkreten Beobachtung im Arbeitsalltag.
-
+Aus einem von mir bei H&M erkannten Problem entwickelt: Ich analysierte den bestehenden Ablauf und erstellte einen Figma-Prototyp, der doppelte Artikelscans am Point of Sale verhindern soll.
 ## project.one.link
 Figma-Prototyp ansehen ↗
 
@@ -182,8 +179,7 @@ In Arbeit
 Profil
 
 ## profile.intro
-Angehender Kaufmann für Digitalisierungsmanagement (Abschluss 01/2027) mit Erfahrung an der Schnittstelle von Business, IT und Anwendern. Praxis in Softwareeinführung, Requirements, Testing, Prozessdigitalisierung und IT-Rollouts im Handelsumfeld.
-
+Ich kenne den Handel aus beiden Perspektiven – aus der Filiale und aus der Retail-IT. Als angehender Kaufmann für Digitalisierungsmanagement (Abschluss 01/2027) verbinde ich Business, IT und Anwender; meine Praxis umfasst Softwareeinführung, Requirements, Testing, Prozessdigitalisierung und IT-Rollouts.
 ## profile.education.label
 Ausbildung
 
@@ -198,6 +194,7 @@ Studium
 Informatik
 Universität Leipzig · 10/2017–02/2022 · ohne Abschluss
 
+Studieninhalte: rechnergestütztes Problemlösen, mathematisches und abstraktes Denken sowie der effiziente Einsatz vorhandener Ressourcen.
 ## profile.technologies.label
 Technologien
 
@@ -220,8 +217,7 @@ IT-Projekt- und Rollout-Koordination · Stakeholder Management · Anwenderbeglei
 Sprachen
 
 ## profile.languages.copy
-Deutsch (Muttersprache) · Englisch (verhandlungssicher) · Schwedisch (gut) · Dänisch (gut)
-
+Deutsch (Muttersprache) · Englisch (verhandlungssicher) · Schwedisch (gut) · Dänisch (gut) · Französisch (gute Kenntnisse) · Spanisch (Grundkenntnisse)
 ## contact.title
 Lass uns sprechen.
 
