@@ -744,8 +744,9 @@
     contact: ["#contact-title", ".contact-section p", ".contact-section .button"],
     footer: ["footer span:first-child"]
   };
-  function apply(lang) {
+  function apply(lang, animate = false) {
     const t = translations[lang] || translations.de;
+    const changedNodes = new Set();
     document.documentElement.lang = lang;
     document.title = t.title;
     document.querySelector('meta[name="description"]').content = t.description;
@@ -782,7 +783,21 @@
           if (texts[j] === undefined) return;
           if (group === "profile" && selector === ".profile-block p") node.innerHTML = texts[j];
           else node.textContent = texts[j];
+          changedNodes.add(node);
         });
+      });
+    }
+    if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      [...changedNodes].forEach((node, index) => {
+        node.getAnimations().forEach(animation => animation.cancel());
+        const animation = node.animate(
+          [
+            { opacity: 0, transform: "translateY(4px)" },
+            { opacity: 1, transform: "translateY(0)" }
+          ],
+          { duration: 220, delay: Math.min(index * 5, 75), easing: "cubic-bezier(.2, .65, .3, 1)", fill: "both" }
+        );
+        animation.onfinish = () => animation.cancel();
       });
     }
   }
@@ -806,7 +821,8 @@
   });
   options.forEach(option => option.addEventListener("click", () => {
     const lang = option.dataset.language;
-    apply(lang);
+    const changed = lang !== document.documentElement.lang;
+    apply(lang, changed);
     try { localStorage.setItem("paullutzer-language", lang); } catch (_) {}
     closeMenu(true);
   }));
