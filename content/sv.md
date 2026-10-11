@@ -125,8 +125,7 @@ Köpenhamn · Augsburg
 02/2022 – 04/2023
 
 ## experience.bullet.1
-Samordning av utrullning av kundkortsläsare till cirka 500 butiker inklusive rapportering till intressenter
-
+Samordnade utrullningen av kundkortsläsare i cirka 500 EDEKA-butiker i samband med lanseringen av PAYBACK/EDEKA-appen; projektuppföljning och intressentrapportering
 ## experience.bullet.2
 Insamling och hantering av krav, testledning samt stöd vid releaser och migreringar
 
@@ -155,14 +154,12 @@ Projekt
 Framtagna ur konkreta situationer, med fokus på vad människor faktiskt behöver i sitt arbete.
 
 ## project.one.type
-UX · Figma-prototyp
-
+H&M · Point of Sale · sep.–nov. 2023
 ## project.one.title
 Duplicate Handling
 
 ## project.one.description
-En prototyp som ska förhindra dubbla registreringar av varor. Idén växte fram ur en konkret observation i vardagen.
-
+Projektet utgick från ett problem jag upptäckte när jag arbetade på H&M. Jag analyserade den befintliga processen och tog fram en Figma-prototyp för att förhindra dubbla varuregistreringar i kassan.
 ## project.one.link
 Visa Figma-prototyp ↗
 
@@ -182,8 +179,7 @@ Pågår
 Profil
 
 ## profile.intro
-Blivande specialist inom digitaliseringsledning (examen 01/2027) med erfarenhet i gränslandet mellan verksamhet, IT och användare. Praktisk erfarenhet av programvaruinförande, krav, testning, processdigitalisering och IT-utrullningar inom handeln.
-
+Jag känner handeln från båda perspektiven – från butiksgolvet och från retail IT. Som blivande specialist inom digitaliseringsledning (examen 01/2027) förenar jag verksamhet, IT och användare. Jag har praktisk erfarenhet av programvaruinförande, krav, testning, processdigitalisering och IT-utrullningar.
 ## profile.education.label
 Utbildning
 
@@ -198,6 +194,7 @@ Studier
 Datavetenskap
 Universität Leipzig · 10/2017–02/2022 · utan examen
 
+Studiefokus: datorstödd problemlösning, matematiskt och abstrakt tänkande samt effektiv användning av tillgängliga resurser.
 ## profile.technologies.label
 Teknik
 
@@ -220,8 +217,7 @@ IT-projekt- och utrullningssamordning · Intressenthantering · Användarstöd �
 Språk
 
 ## profile.languages.copy
-Tyska (modersmål) · Engelska (flytande) · Svenska (goda kunskaper) · Danska (goda kunskaper)
-
+Tyska (modersmål) · Engelska (flytande) · Svenska (goda kunskaper) · Danska (goda kunskaper) · Franska (goda kunskaper) · Spanska (grundläggande)
 ## contact.title
 Låt oss prata.
 

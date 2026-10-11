@@ -125,8 +125,7 @@ Copenhagen · Augsburg
 02/2022 – 04/2023
 
 ## experience.bullet.1
-Coordinated a customer card scanner rollout across around 500 stores, including stakeholder reporting
-
+Coordinated the rollout of customer card scanners across around 500 EDEKA stores as part of the PAYBACK/EDEKA app launch; project tracking and stakeholder reporting
 ## experience.bullet.2
 Gathered and managed requirements, managed testing, and supported releases and migrations
 
@@ -155,14 +154,12 @@ Projects
 Built from real situations, with a focus on what people need to do their work well.
 
 ## project.one.type
-UX · Figma prototype
-
+H&M · Point of Sale · Sep–Nov 2023
 ## project.one.title
 Duplicate Handling
 
 ## project.one.description
-A prototype to prevent duplicate entries when recording goods, based on a specific observation from day-to-day work.
-
+The project started with an issue I identified while working at H&M. I analysed the existing process and developed a Figma prototype to prevent duplicate item scans at the point of sale.
 ## project.one.link
 View Figma prototype ↗
 
@@ -182,8 +179,7 @@ In progress
 Profile
 
 ## profile.intro
-Upcoming digitalisation management specialist (qualification expected 01/2027) with experience at the intersection of business, IT, and end users. Practical experience in software implementation, requirements, testing, process digitalisation, and IT rollouts in retail.
-
+I know retail from both sides: from the shop floor and from retail IT. As an upcoming digitalisation management specialist (qualification expected 01/2027), I connect business, IT, and end users, with practical experience in software implementation, requirements, testing, process digitalisation, and IT rollouts.
 ## profile.education.label
 Vocational training
 
@@ -198,6 +194,7 @@ Studies
 Computer Science
 Leipzig University · 10/2017–02/2022 · no degree
 
+Study focus: computer-aided problem solving, mathematical and abstract reasoning, and efficient use of available resources.
 ## profile.technologies.label
 Technologies
 
@@ -220,8 +217,7 @@ IT project and rollout coordination · Stakeholder management · User support ·
 Languages
 
 ## profile.languages.copy
-German (native) · English (professional proficiency) · Swedish (good) · Danish (good)
-
+German (native) · English (professional proficiency) · Swedish (good) · Danish (good) · French (good proficiency) · Spanish (basic proficiency)
 ## contact.title
 Let’s talk.
 

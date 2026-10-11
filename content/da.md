@@ -125,8 +125,7 @@ København · Augsburg
 02/2022 – 04/2023
 
 ## experience.bullet.1
-Koordinering af udrulning af kundekortscannere i cirka 500 butikker inklusive rapportering til interessenter
-
+Koordinerede udrulningen af kundekortscannere i cirka 500 EDEKA-butikker i forbindelse med lanceringen af PAYBACK/EDEKA-appen; projektopfølgning og rapportering til interessenter
 ## experience.bullet.2
 Indsamling og håndtering af krav, teststyring samt støtte til releases og migreringer
 
@@ -155,14 +154,12 @@ Projekter
 Skabt ud fra konkrete situationer med fokus på, hvad mennesker faktisk har brug for i deres arbejde.
 
 ## project.one.type
-UX · Figma-prototype
-
+H&M · Point of Sale · sep.–nov. 2023
 ## project.one.title
 Duplicate Handling
 
 ## project.one.description
-En prototype, der skal forebygge dobbeltregistrering af varer. Idéen opstod ud fra en konkret observation i hverdagen.
-
+Projektet tog udgangspunkt i et problem, jeg opdagede hos H&M. Jeg analyserede den eksisterende proces og udviklede en Figma-prototype, der skal forhindre dobbeltregistreringer ved kassen.
 ## project.one.link
 Se Figma-prototype ↗
 
@@ -182,8 +179,7 @@ Under udarbejdelse
 Profil
 
 ## profile.intro
-Kommende elev inden for digitaliseringsledelse (afslutning 01/2027) med erfaring i krydsfeltet mellem forretning, IT og brugere. Praktisk erfaring med softwareimplementering, krav, test, digitalisering af processer og IT-udrulninger i detailhandlen.
-
+Jeg kender detailhandlen fra begge sider – fra butikken og fra retail IT. Som kommende elev inden for digitaliseringsledelse (afslutning 01/2027) forbinder jeg forretning, IT og brugere. Jeg har praktisk erfaring med softwareimplementering, krav, test, digitalisering af processer og IT-udrulninger.
 ## profile.education.label
 Uddannelse
 
@@ -198,6 +194,7 @@ Studier
 Datalogi
 Universität Leipzig · 10/2017–02/2022 · uden afslutning
 
+Studiefokus: computerbaseret problemløsning, matematisk og abstrakt tænkning samt effektiv brug af tilgængelige ressourcer.
 ## profile.technologies.label
 Teknologier
 
@@ -220,8 +217,7 @@ IT-projekt- og udrulningskoordinering · Interessenthåndtering · Brugerhjælp 
 Sprog
 
 ## profile.languages.copy
-Tysk (modersmål) · Engelsk (flydende) · Svensk (godt) · Dansk (godt)
-
+Tysk (modersmål) · Engelsk (flydende) · Svensk (godt) · Dansk (godt) · Fransk (gode kundskaber) · Spansk (grundlæggende)
 ## contact.title
 Lad os tale sammen.
 
