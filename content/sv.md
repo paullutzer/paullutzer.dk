@@ -125,13 +125,13 @@ Köpenhamn · Köpenhamns universitet · ActionAid Denmark
 02/2022 – 10/2022
 
 ## experience.role.6.title
-Språkstudier
+Angewandte Interkulturelle Sprachwissenschaft
 
 ## experience.role.6.company
 Universität Augsburg · engelska, franska och svenska
 
 ## experience.role.6.date
-2022–2023
+10/2022 – 04/2023
 
 ## experience.bullet.1
 Samordnade utrullningen av kundkortsläsare i cirka 500 EDEKA-butiker i samband med lanseringen av PAYBACK/EDEKA-appen; projektuppföljning och intressentrapportering

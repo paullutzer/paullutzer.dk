@@ -125,13 +125,13 @@ Kopenhagen · Universität Kopenhagen · ActionAid Denmark
 02/2022 – 10/2022
 
 ## experience.role.6.title
-Studium (Sprachen)
+Angewandte Interkulturelle Sprachwissenschaft
 
 ## experience.role.6.company
 Universität Augsburg · Englisch, Französisch und Schwedisch
 
 ## experience.role.6.date
-2022–2023
+10/2022 – 04/2023
 
 ## experience.bullet.1
 Koordination des Kundenkartenscanner-Rollouts in rund 500 EDEKA-Filialen im Zuge des Starts der PAYBACK/EDEKA-App; Projekttracking und Stakeholder-Reporting

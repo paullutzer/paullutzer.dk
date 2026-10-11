@@ -125,13 +125,13 @@ Copenhagen · University of Copenhagen · ActionAid Denmark
 02/2022 – 10/2022
 
 ## experience.role.6.title
-Language studies
+Angewandte Interkulturelle Sprachwissenschaft
 
 ## experience.role.6.company
 University of Augsburg · English, French, and Swedish
 
 ## experience.role.6.date
-2022–2023
+10/2022 – 04/2023
 
 ## experience.bullet.1
 Coordinated the rollout of customer card scanners across around 500 EDEKA stores as part of the PAYBACK/EDEKA app launch; project tracking and stakeholder reporting
