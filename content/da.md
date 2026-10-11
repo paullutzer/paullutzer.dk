@@ -116,22 +116,22 @@ Hennes & Mauritz · Hamborg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Frivilligt arbejde
-
-## experience.role.5.company
-København · Københavns Universitet · ActionAid Denmark
-
-## experience.role.5.date
-02/2022 – 10/2022
-
-## experience.role.6.title
 Angewandte Interkulturelle Sprachwissenschaft
 
-## experience.role.6.company
+## experience.role.5.company
 Universität Augsburg · engelsk, fransk og svensk
 
-## experience.role.6.date
+## experience.role.5.date
 10/2022 – 04/2023
+
+## experience.role.6.title
+Frivilligt arbejde
+
+## experience.role.6.company
+København · Københavns Universitet · ActionAid Denmark
+
+## experience.role.6.date
+02/2022 – 10/2022
 
 ## experience.bullet.1
 Koordinerede udrulningen af kundekortscannere i cirka 500 EDEKA-butikker i forbindelse med lanceringen af PAYBACK/EDEKA-appen; projektopfølgning og rapportering til interessenter

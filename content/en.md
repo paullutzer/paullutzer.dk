@@ -116,22 +116,22 @@ Hennes & Mauritz · Hamburg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Volunteering
-
-## experience.role.5.company
-Copenhagen · University of Copenhagen · ActionAid Denmark
-
-## experience.role.5.date
-02/2022 – 10/2022
-
-## experience.role.6.title
 Angewandte Interkulturelle Sprachwissenschaft
 
-## experience.role.6.company
+## experience.role.5.company
 University of Augsburg · English, French, and Swedish
 
-## experience.role.6.date
+## experience.role.5.date
 10/2022 – 04/2023
+
+## experience.role.6.title
+Volunteering
+
+## experience.role.6.company
+Copenhagen · University of Copenhagen · ActionAid Denmark
+
+## experience.role.6.date
+02/2022 – 10/2022
 
 ## experience.bullet.1
 Coordinated the rollout of customer card scanners across around 500 EDEKA stores as part of the PAYBACK/EDEKA app launch; project tracking and stakeholder reporting

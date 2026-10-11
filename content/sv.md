@@ -116,22 +116,22 @@ Hennes & Mauritz · Hamburg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Ideellt engagemang
-
-## experience.role.5.company
-Köpenhamn · Köpenhamns universitet · ActionAid Denmark
-
-## experience.role.5.date
-02/2022 – 10/2022
-
-## experience.role.6.title
 Angewandte Interkulturelle Sprachwissenschaft
 
-## experience.role.6.company
+## experience.role.5.company
 Universität Augsburg · engelska, franska och svenska
 
-## experience.role.6.date
+## experience.role.5.date
 10/2022 – 04/2023
+
+## experience.role.6.title
+Ideellt engagemang
+
+## experience.role.6.company
+Köpenhamn · Köpenhamns universitet · ActionAid Denmark
+
+## experience.role.6.date
+02/2022 – 10/2022
 
 ## experience.bullet.1
 Samordnade utrullningen av kundkortsläsare i cirka 500 EDEKA-butiker i samband med lanseringen av PAYBACK/EDEKA-appen; projektuppföljning och intressentrapportering
