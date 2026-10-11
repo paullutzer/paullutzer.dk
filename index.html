@@ -695,7 +695,18 @@
       else el.setAttribute("aria-label", t.language);
     });
     for (const [group, selectors] of Object.entries(groups)) {
-      const values = t[group];
+      const raw = t[group];
+      const valuesByGroup = {
+        nav: [raw],
+        hero: raw.map(value => [value]),
+        facts: [raw],
+        experience: [[raw[0]], [raw[1]], raw.slice(2, 6), raw.slice(6, 10), raw.slice(10, 17), [raw[17]]],
+        projects: [[raw[0]], [raw[1]], [raw[2], raw[6]], [raw[3], raw[7]], [raw[4], raw[8]], [raw[5]], [raw[9]]],
+        profile: [[raw[0]], [raw[1]], [raw[2], raw[4], raw[6], raw[8]], [raw[3], raw[5], raw[7], raw[9]]],
+        contact: raw.map(value => [value]),
+        footer: [[raw]]
+      };
+      const values = valuesByGroup[group];
       selectors.forEach((selector, i) => {
         const nodes = document.querySelectorAll(selector);
         const texts = Array.isArray(values[i]) ? values[i] : [values[i]];
