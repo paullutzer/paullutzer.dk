@@ -128,7 +128,7 @@ København · Københavns Universitet · ActionAid Denmark
 Sprogstudier
 
 ## experience.role.6.company
-Universität Augsburg
+Universität Augsburg · engelsk, fransk og svensk
 
 ## experience.role.6.date
 2022–2023
