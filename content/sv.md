@@ -142,6 +142,9 @@ Utveckling av en delvis automatiserad servicelösning med RPA
 ## experience.bullet.6
 Utveckling av en prototyp för att undvika dubbla registreringar vid varuhantering
 
+## experience.prototypeLink
+Visa Figma-prototyp ↗
+
 ## experience.bullet.7
 Ledde arbetsgruppen ”Smartest Arbeiten” och införde förbättrade butiksprocesser
 
