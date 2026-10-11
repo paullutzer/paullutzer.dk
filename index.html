@@ -67,6 +67,19 @@
       white-space: nowrap;
     }
 
+
+    .language-picker {
+      min-height: 38px;
+      padding: 6px 30px 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
     .navigation {
       display: flex;
       align-items: center;
@@ -376,10 +389,11 @@
       }
 
       .navigation {
-        width: 100%;
         flex-wrap: wrap;
-        gap: 10px 20px;
+        gap: 10px 16px;
       }
+
+      .language-picker { flex: 0 0 auto; }
 
       .hero {
         grid-template-columns: 1fr;
@@ -435,6 +449,13 @@
         <a href="#profil">Profil</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
+      <label class="visually-hidden" for="language-picker">Sprache</label>
+      <select class="language-picker" id="language-picker" aria-label="Sprache">
+        <option value="de">Deutsch</option>
+        <option value="da">Dansk</option>
+        <option value="sv">Svenska</option>
+        <option value="en">English</option>
+      </select>
     </header>
 
     <main id="top">
@@ -604,5 +625,98 @@
       <span>© 2026</span>
     </footer>
   </div>
+<script>
+(() => {
+  const translations = {
+    de: {
+      title: "Paul Lutzer — Digitalisierung im Arbeitsalltag",
+      description: "Paul Lutzer arbeitet an der Schnittstelle von Retail IT, Digitalisierung und Prozessen.",
+      language: "Sprache", nav: ["Erfahrung", "Projekte", "Profil", "Kontakt"],
+      hero: ["Digitalisierung · Retail IT · Kiel", "Technologie, die im Alltag funktioniert.", "Ich verbinde IT, Prozesse und Menschen — von der Idee bis zur Umsetzung in der Filiale.", "Meine Projekte", "Kontakt aufnehmen", "Paul Lutzer · Kiel"],
+      facts: ["500 Filialen", "im Rahmen eines Rollouts begleitet", "2.500 Geräte", "im Windows-11-Rollout", "Retail IT", "Prozesse verständlich und praktikabel machen"],
+      experience: ["Berufserfahrung", "Projekte gelingen, wenn technische Anforderungen und der Arbeitsalltag der Menschen zusammenpassen.", "Kaufmann für Digitalisierungsmanagement", "Konsularischer Assistent", "Sales Advisor", "Volunteer Receptionist", "EDEKA IT · Neumünster", "Schwedisches Konsulat · Kiel", "H&M · Hamburg", "Globalhagen Hostel · Kopenhagen", "Rollout in 500 Filialen und von 2.500 Geräten im Rahmen von Windows 11", "Analyse und Optimierung von Geschäftsprozessen", "Requirements-, Stakeholder- und Testmanagement", "Begleitung von Releases und Migrationen", "Leitung der Arbeitsgruppe „Smartest Arbeiten“", "Optimierung von Filialprozessen", "Entwicklung eines POS-Prototyps", "04/2025 – heute"],
+      projects: ["Projekte", "Aus konkreten Situationen entstanden — mit Blick darauf, was Menschen bei ihrer Arbeit wirklich brauchen.", "H&M · Point of Sale", "Fehler bei der Warenerfassung vermeiden", "Ein Figma-Prototyp, der doppelte Erfassungen im Store verhindern soll. Der Ansatz entstand aus einem konkreten Problem im Arbeitsalltag.", "Prototyp ansehen ↗", "IHK · Abschlussprojekt", "Einen Serviceprozess teilautomatisieren", "Ein bestehender Serviceprozess wird im Rahmen des IHK-Abschlussprojekts auf sinnvolle Automatisierungsmöglichkeiten untersucht.", "In Arbeit"],
+      profile: ["Profil", "Kaufmännisches Denken, technisches Interesse und Erfahrung aus dem direkten Umfeld von Filialen und Serviceprozessen.", "Ausbildung", "Kaufmann für Digitalisierungsmanagement<br>IHK-Abschluss · 02/2027", "Studium", "Informatik<br>Universität Leipzig · 2017–2022", "Sprachen", "Deutsch · Englisch · Schwedisch · Dänisch", "Werkzeuge und Themen", "Excel · VBA · Power BI · Jira · Figma · RPA · IoT · POS"],
+      contact: ["Lass uns sprechen.", "Du hast eine Frage zu Digitalisierung, Retail IT oder Zusammenarbeit? Schreib mir gern.", "E-Mail schreiben"], footer: "Paul Lutzer · Kiel"
+    },
+    da: {
+      title: "Paul Lutzer — Digitalisering i hverdagen",
+      description: "Paul Lutzer arbejder i krydsfeltet mellem retail IT, digitalisering og processer.",
+      language: "Sprog", nav: ["Erfaring", "Projekter", "Profil", "Kontakt"],
+      hero: ["Digitalisering · Retail IT · Kiel", "Teknologi, der fungerer i hverdagen.", "Jeg forbinder IT, processer og mennesker — fra idé til implementering i butikkerne.", "Mine projekter", "Tag kontakt", "Paul Lutzer · Kiel"],
+      facts: ["500 butikker", "deltog i udrulningen", "2.500 enheder", "i Windows 11-udrulningen", "Retail IT", "gøre processer forståelige og praktiske"],
+      experience: ["Erhvervserfaring", "Projekter lykkes, når tekniske krav passer til menneskers hverdag på arbejdet.", "Kontoruddannet inden for digitaliseringsledelse", "Konsulær assistent", "Salgsrådgiver", "Frivillig receptionist", "EDEKA IT · Neumünster", "Sveriges konsulat · Kiel", "H&M · Hamborg", "Globalhagen Hostel · København", "Udrulning i 500 butikker og af 2.500 enheder i forbindelse med Windows 11", "Analyse og optimering af forretningsprocesser", "Krav-, interessent- og teststyring", "Koordinering af releases og migreringer", "Ledelse af arbejdsgruppen “Smartest Arbeiten”", "Optimering af butiksprocesser", "Udvikling af en POS-prototype", "04/2025 – nu"],
+      projects: ["Projekter", "Skabt ud fra konkrete situationer med fokus på, hvad mennesker faktisk har brug for i deres arbejde.", "H&M · Point of Sale", "Undgå fejl ved vareindscanning", "En Figma-prototype, der skal forhindre dobbeltregistreringer i butikken. Idéen opstod ud fra et konkret problem i hverdagen.", "Se prototype ↗", "IHK · Afsluttende projekt", "Delvis automatisering af en serviceproces", "En eksisterende serviceproces undersøges som led i IHK-afslutningsprojektet for at finde relevante muligheder for automatisering.", "Under udarbejdelse"],
+      profile: ["Profil", "Forretningsforståelse, teknisk interesse og erfaring tæt på butikker og serviceprocesser.", "Uddannelse", "Kontoruddannelse inden for digitaliseringsledelse<br>IHK-eksamen · 02/2027", "Studier", "Datalogi<br>Universität Leipzig · 2017–2022", "Sprog", "Tysk · Engelsk · Svensk · Dansk", "Værktøjer og emner", "Excel · VBA · Power BI · Jira · Figma · RPA · IoT · POS"],
+      contact: ["Lad os tale sammen.", "Har du spørgsmål om digitalisering, retail IT eller samarbejde? Skriv gerne.", "Skriv en e-mail"], footer: "Paul Lutzer · Kiel"
+    },
+    sv: {
+      title: "Paul Lutzer — Digitalisering i vardagen",
+      description: "Paul Lutzer arbetar i gränslandet mellan retail IT, digitalisering och processer.",
+      language: "Språk", nav: ["Erfarenhet", "Projekt", "Profil", "Kontakt"],
+      hero: ["Digitalisering · Retail IT · Kiel", "Teknik som fungerar i vardagen.", "Jag förenar IT, processer och människor — från idé till genomförande i butik.", "Mina projekt", "Ta kontakt", "Paul Lutzer · Kiel"],
+      facts: ["500 butiker", "deltog i utrullningen", "2 500 enheter", "i Windows 11-utrullningen", "Retail IT", "göra processer begripliga och praktiska"],
+      experience: ["Yrkeserfarenhet", "Projekt lyckas när tekniska krav fungerar tillsammans med människors vardag på jobbet.", "Kontorsutbildad inom digitaliseringshantering", "Konsulär assistent", "Säljrådgivare", "Volontärreceptionist", "EDEKA IT · Neumünster", "Sveriges konsulat · Kiel", "H&M · Hamburg", "Globalhagen Hostel · Köpenhamn", "Utrullning i 500 butiker och av 2 500 enheter i samband med Windows 11", "Analys och optimering av affärsprocesser", "Krav-, intressent- och testhantering", "Samordning av releaser och migreringar", "Ledde arbetsgruppen ”Smartest Arbeiten”", "Optimering av butiksprocesser", "Utveckling av en POS-prototyp", "04/2025 – nu"],
+      projects: ["Projekt", "Framtagna ur konkreta situationer, med fokus på vad människor faktiskt behöver i sitt arbete.", "H&M · Point of Sale", "Undvik fel vid varuregistrering", "En Figma-prototyp som ska förhindra dubbelregistrering i butiken. Idén växte fram ur ett konkret problem i vardagen.", "Visa prototyp ↗", "IHK · Examensprojekt", "Delvis automatisera en serviceprocess", "En befintlig serviceprocess undersöks inom ramen för IHK-examensprojektet för att hitta lämpliga möjligheter till automatisering.", "Pågår"],
+      profile: ["Profil", "Affärsförståelse, tekniskt intresse och erfarenhet nära butiker och serviceprocesser.", "Utbildning", "Kontorsutbildning inom digitaliseringshantering<br>IHK-examen · 02/2027", "Studier", "Datavetenskap<br>Universität Leipzig · 2017–2022", "Språk", "Tyska · Engelska · Svenska · Danska", "Verktyg och områden", "Excel · VBA · Power BI · Jira · Figma · RPA · IoT · POS"],
+      contact: ["Låt oss prata.", "Har du en fråga om digitalisering, retail IT eller samarbete? Skriv gärna.", "Skriv ett mejl"], footer: "Paul Lutzer · Kiel"
+    },
+    en: {
+      title: "Paul Lutzer — Digitalisation at work",
+      description: "Paul Lutzer works at the intersection of retail IT, digitalisation, and processes.",
+      language: "Language", nav: ["Experience", "Projects", "Profile", "Contact"],
+      hero: ["Digitalisation · Retail IT · Kiel", "Technology that works in practice.", "I connect IT, processes, and people — from the initial idea through implementation in stores.", "My projects", "Get in touch", "Paul Lutzer · Kiel"],
+      facts: ["500 stores", "rollout experience", "2,500 devices", "in the Windows 11 rollout", "Retail IT", "making processes clear and practical"],
+      experience: ["Experience", "Projects work when technical requirements fit the day-to-day reality of the people using them.", "Digitalisation Management Specialist", "Consular Assistant", "Sales Advisor", "Volunteer Receptionist", "EDEKA IT · Neumünster", "Swedish Consulate · Kiel", "H&M · Hamburg", "Globalhagen Hostel · Copenhagen", "Windows 11 rollout across 500 stores and 2,500 devices", "Analysed and improved business processes", "Requirements, stakeholder, and test management", "Supported releases and migrations", "Led the “Smartest Arbeiten” working group", "Improved store processes", "Developed a POS prototype", "04/2025 – present"],
+      projects: ["Projects", "Built from real situations, with a focus on what people need to do their work well.", "H&M · Point of Sale", "Prevent errors when recording goods", "A Figma prototype designed to prevent duplicate entries in store. The idea came from a specific day-to-day problem.", "View prototype ↗", "IHK · Final project", "Partly automate a service process", "As part of the IHK final project, an existing service process is being reviewed for practical automation opportunities.", "In progress"],
+      profile: ["Profile", "Business perspective, technical curiosity, and experience close to store teams and service processes.", "Training", "Digitalisation Management Specialist<br>IHK qualification · 02/2027", "Studies", "Computer Science<br>Leipzig University · 2017–2022", "Languages", "German · English · Swedish · Danish", "Tools and topics", "Excel · VBA · Power BI · Jira · Figma · RPA · IoT · POS"],
+      contact: ["Let’s talk.", "Have a question about digitalisation, retail IT, or working together? Feel free to write.", "Send an email"], footer: "Paul Lutzer · Kiel"
+    }
+  };
+  const groups = {
+    nav: [".navigation a"],
+    hero: [".eyebrow", "#hero-title", ".hero-copy", ".hero-actions .button", ".hero-actions .text-link", ".portrait-caption"],
+    facts: [".fact strong, .fact span"],
+    experience: ["#erfahrung .section-heading h2", "#erfahrung .section-intro", ".experience-item h3", ".experience-item .company", ".experience-item li", ".experience-item time:nth-of-type(1)"],
+    projects: ["#projekte .section-heading h2", "#projekte .section-intro", ".project-type", ".project h3", ".project-description", ".project .text-link", ".project-status"],
+    profile: ["#profil .section-heading h2", "#profil .section-intro", ".profile-block h3", ".profile-block p"],
+    contact: ["#contact-title", ".contact-section p", ".contact-section .button"],
+    footer: ["footer span:first-child"]
+  };
+  function apply(lang) {
+    const t = translations[lang] || translations.de;
+    document.documentElement.lang = lang;
+    document.title = t.title;
+    document.querySelector('meta[name="description"]').content = t.description;
+    document.querySelectorAll("label[for='language-picker'], #language-picker").forEach(el => {
+      if (el.tagName === "LABEL") el.textContent = t.language;
+      else el.setAttribute("aria-label", t.language);
+    });
+    for (const [group, selectors] of Object.entries(groups)) {
+      const values = t[group];
+      selectors.forEach((selector, i) => {
+        const nodes = document.querySelectorAll(selector);
+        const texts = Array.isArray(values[i]) ? values[i] : [values[i]];
+        nodes.forEach((node, j) => {
+          if (texts[j] === undefined) return;
+          if (group === "profile" && selector === ".profile-block p") node.innerHTML = texts[j];
+          else node.textContent = texts[j];
+        });
+      });
+    }
+  }
+  const picker = document.getElementById("language-picker");
+  let initial = "de";
+  try { initial = localStorage.getItem("paullutzer-language") || "de"; } catch (_) {}
+  if (!translations[initial]) initial = "de";
+  picker.value = initial;
+  apply(initial);
+  picker.addEventListener("change", () => {
+    const lang = picker.value;
+    apply(lang);
+    try { localStorage.setItem("paullutzer-language", lang); } catch (_) {}
+  });
+})();
+</script>
 </body>
 </html>
