@@ -116,7 +116,7 @@ Hennes & Mauritz · Hamburg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Angewandte Interkulturelle Sprachwissenschaft
+Tillämpad interkulturell språkvetenskap
 
 ## experience.role.5.company
 Universität Augsburg · engelska, franska och svenska
