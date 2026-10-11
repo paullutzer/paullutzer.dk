@@ -2,7 +2,7 @@
 Markus Paul Wilhelm Lutzer — Digitalisering i hverdagen
 
 ## meta.description
-Markus Paul Wilhelm Lutzer arbejder i krydsfeltet mellem retail IT, digitalisering og processer.
+Kommende elev inden for digitaliseringsledelse med erfaring i krydsfeltet mellem forretning, IT og brugere.
 
 ## language.label
 Sprog
@@ -59,31 +59,34 @@ Markus Paul Wilhelm Lutzer · Kiel
 500 butikker
 
 ## facts.one.copy
-deltog i udrulningen
+koordineret i forbindelse med en udrulning
 
 ## facts.two.title
 2.500 enheder
 
 ## facts.two.copy
-i Windows 11-udrulningen
+understøttet ved Windows 11-udrulningen
 
 ## facts.three.title
-Retail IT
+Forretning × IT
 
 ## facts.three.copy
-gøre processer forståelige og praktiske
+omsætte behov til brugbare arbejdsgange
 
 ## experience.title
 Erhvervserfaring
 
 ## experience.intro
-Projekter lykkes, når tekniske krav passer til menneskers hverdag på arbejdet.
+Erfaring i krydsfeltet mellem forretning, IT og brugere — med fokus på løsninger, der fungerer i hverdagen.
 
 ## experience.role.1.title
-Kontoruddannet inden for digitaliseringsledelse
+Elev i digitaliseringsledelse
 
 ## experience.role.1.company
 EDEKA IT · Neumünster
+
+## experience.role.1.date
+08/2024 – 01/2027
 
 ## experience.role.2.title
 Konsulær assistent
@@ -91,41 +94,56 @@ Konsulær assistent
 ## experience.role.2.company
 Sveriges konsulat · Kiel
 
+## experience.role.2.date
+siden 04/2025
+
 ## experience.role.3.title
-Salgsrådgiver
+Salgsmedarbejder
 
 ## experience.role.3.company
-H&M · Hamborg
+EDEKA Riechey · Fehmarn
+
+## experience.role.3.date
+04/2024 – 08/2024
 
 ## experience.role.4.title
-Frivillig receptionist
+Salgsrådgiver
 
 ## experience.role.4.company
-Globalhagen Hostel · København
+Hennes & Mauritz · Hamborg
+
+## experience.role.4.date
+05/2023 – 04/2024
+
+## experience.role.5.title
+Forskellige jobs og studier
+
+## experience.role.5.company
+København · Augsburg
+
+## experience.role.5.date
+02/2022 – 04/2023
 
 ## experience.bullet.1
-Udrulning i 500 butikker og af 2.500 enheder i forbindelse med Windows 11
+Koordinering af udrulning af kundekortscannere i cirka 500 butikker inklusive rapportering til interessenter
 
 ## experience.bullet.2
-Analyse og optimering af forretningsprocesser
+Indsamling og håndtering af krav, teststyring samt støtte til releases og migreringer
 
 ## experience.bullet.3
-Krav-, interessent- og teststyring
+Analyse og optimering af tværgående forretningsprocesser og IT-grænseflader
 
 ## experience.bullet.4
-Koordinering af releases og migreringer
+Støtte til Windows 11-udrulning på cirka 2.500 enheder inklusive hjælp til brugerne
 
 ## experience.bullet.5
-Ledelse af arbejdsgruppen “Smartest Arbeiten”
+Udvikling af en delvist automatiseret serviceløsning med RPA
 
 ## experience.bullet.6
-Optimering af butiksprocesser
+Udvikling af en prototype, der forebygger dobbeltregistrering ved varemodtagelse
 
 ## experience.bullet.7
-Udvikling af en POS-prototype
-
-## experience.currentDate
-04/2025 – nu
+Ledelse af arbejdsgruppen ”Smartest Arbeiten” og indarbejdelse af forbedrede butiksprocesser
 
 ## projects.title
 Projekter
@@ -134,16 +152,16 @@ Projekter
 Skabt ud fra konkrete situationer med fokus på, hvad mennesker faktisk har brug for i deres arbejde.
 
 ## project.one.type
-H&M · Point of Sale
+UX · Figma-prototype
 
 ## project.one.title
-Undgå fejl ved vareindscanning
+Duplicate Handling
 
 ## project.one.description
-En Figma-prototype, der skal forhindre dobbeltregistreringer i butikken. Idéen opstod ud fra et konkret problem i hverdagen.
+En prototype, der skal forebygge dobbeltregistrering af varer. Idéen opstod ud fra en konkret observation i hverdagen.
 
 ## project.one.link
-Se prototype ↗
+Se Figma-prototype ↗
 
 ## project.two.type
 IHK · Afsluttende projekt
@@ -161,33 +179,45 @@ Under udarbejdelse
 Profil
 
 ## profile.intro
-Forretningsforståelse, teknisk interesse og erfaring tæt på butikker og serviceprocesser.
+Kommende elev inden for digitaliseringsledelse (afslutning 01/2027) med erfaring i krydsfeltet mellem forretning, IT og brugere. Praktisk erfaring med softwareimplementering, krav, test, digitalisering af processer og IT-udrulninger i detailhandlen.
 
 ## profile.education.label
 Uddannelse
 
 ## profile.education.copy
-Kontoruddannelse inden for digitaliseringsledelse
-IHK-eksamen · 02/2027
+Elev i digitaliseringsledelse
+IHK-eksamen · 01/2027
 
 ## profile.study.label
 Studier
 
 ## profile.study.copy
 Datalogi
-Universität Leipzig · 2017–2022
+Universität Leipzig · 10/2017–02/2022 · uden afslutning
+
+## profile.technologies.label
+Teknologier
+
+## profile.technologies.copy
+Excel · Power BI · Jira · Figma · RPA · IoT
+
+## profile.business.label
+Forretning og applikationer
+
+## profile.business.copy
+Procesanalyse og -optimering · Softwareimplementering · Krav · Test
+
+## profile.project.label
+Projekt og Business-IT
+
+## profile.project.copy
+IT-projekt- og udrulningskoordinering · Interessenthåndtering · Brugerhjælp · Smart Retail
 
 ## profile.languages.label
 Sprog
 
 ## profile.languages.copy
-Tysk · Engelsk · Svensk · Dansk
-
-## profile.tools.label
-Værktøjer og emner
-
-## profile.tools.copy
-Excel · VBA · Power BI · Jira · Figma · RPA · IoT · POS
+Tysk (modersmål) · Engelsk (flydende) · Svensk (godt) · Dansk (godt)
 
 ## contact.title
 Lad os tale sammen.
@@ -200,3 +230,6 @@ Skriv en e-mail
 
 ## footer.name
 Markus Paul Wilhelm Lutzer · Kiel
+
+## footer.linkedin
+LinkedIn-profil ↗
