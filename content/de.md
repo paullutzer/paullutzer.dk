@@ -116,22 +116,22 @@ Hennes & Mauritz · Hamburg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Ehrenamtliche Tätigkeiten
-
-## experience.role.5.company
-Kopenhagen · Universität Kopenhagen · ActionAid Denmark
-
-## experience.role.5.date
-02/2022 – 10/2022
-
-## experience.role.6.title
 Angewandte Interkulturelle Sprachwissenschaft
 
-## experience.role.6.company
+## experience.role.5.company
 Universität Augsburg · Englisch, Französisch und Schwedisch
 
-## experience.role.6.date
+## experience.role.5.date
 10/2022 – 04/2023
+
+## experience.role.6.title
+Ehrenamtliche Tätigkeiten
+
+## experience.role.6.company
+Kopenhagen · Universität Kopenhagen · ActionAid Denmark
+
+## experience.role.6.date
+02/2022 – 10/2022
 
 ## experience.bullet.1
 Koordination des Kundenkartenscanner-Rollouts in rund 500 EDEKA-Filialen im Zuge des Starts der PAYBACK/EDEKA-App; Projekttracking und Stakeholder-Reporting
