@@ -128,7 +128,7 @@ Kopenhagen · Universität Kopenhagen · ActionAid Denmark
 Studium (Sprachen)
 
 ## experience.role.6.company
-Universität Augsburg
+Universität Augsburg · Englisch, Französisch und Schwedisch
 
 ## experience.role.6.date
 2022–2023
