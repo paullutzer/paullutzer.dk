@@ -128,7 +128,7 @@ Copenhagen · University of Copenhagen · ActionAid Denmark
 Language studies
 
 ## experience.role.6.company
-University of Augsburg
+University of Augsburg · English, French, and Swedish
 
 ## experience.role.6.date
 2022–2023
