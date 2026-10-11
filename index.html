@@ -722,7 +722,7 @@
     return sections;
   }
   async function loadTranslation(lang) {
-    const response = await fetch("content/" + lang + ".md", { cache: "no-cache" });
+    const response = await fetch("content/" + lang + ".md?cb=" + Date.now(), { cache: "no-store" });
     if (!response.ok) throw new Error("Could not load content for " + lang);
     const sections = parseMarkdown(await response.text());
     const get = key => sections[key] || "";
