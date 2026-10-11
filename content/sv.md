@@ -116,13 +116,22 @@ Hennes & Mauritz · Hamburg
 05/2023 – 04/2024
 
 ## experience.role.5.title
-Olika arbeten och studier
+Ideellt engagemang
 
 ## experience.role.5.company
-Köpenhamn · Augsburg
+Köpenhamn · Köpenhamns universitet · ActionAid Denmark
 
 ## experience.role.5.date
-02/2022 – 04/2023
+02/2022 – 10/2022
+
+## experience.role.6.title
+Språkstudier
+
+## experience.role.6.company
+Universität Augsburg
+
+## experience.role.6.date
+2022–2023
 
 ## experience.bullet.1
 Samordnade utrullningen av kundkortsläsare i cirka 500 EDEKA-butiker i samband med lanseringen av PAYBACK/EDEKA-appen; projektuppföljning och intressentrapportering
@@ -139,13 +148,25 @@ Stöd vid Windows 11-utrullning till cirka 2 500 enheter inklusive användarstö
 Utveckling av en delvis automatiserad servicelösning med RPA
 
 ## experience.bullet.6
+Stöd i konsulära ärenden och administrativa uppgifter i ett svensk-tyskt sammanhang
+
+## experience.bullet.7
 Utveckling av en prototyp för att undvika dubbla registreringar vid varuhantering
 
 ## experience.prototypeLink
 Visa Figma-prototyp ↗
 
-## experience.bullet.7
+## experience.bullet.8
 Ledde arbetsgruppen ”Smartest Arbeiten” och införde förbättrade butiksprocesser
+
+## experience.bullet.9
+Samordnade det tyskspråkiga bordet på språkcaféet i Studenterhuset
+
+## experience.bullet.10
+Tog emot internationella gäster med in- och utcheckning, hanterade betalningar och ansvarade ibland för vandrarhemmets kvällsverksamhet
+
+## experience.bullet.11
+Arbetade på caféet med att förbereda drycker, ta hand om gäster samt öppna och stänga
 
 ## projects.title
 Projekt
