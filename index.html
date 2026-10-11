@@ -588,6 +588,7 @@
             <div>
               <h3>Konsularischer Assistent</h3>
               <p class="company">Schwedisches Konsulat · Kiel</p>
+              <ul><li>Unterstützung bei konsularischen Anliegen und organisatorischen Abläufen im deutsch-schwedischen Umfeld</li></ul>
             </div>
             <time class="date" datetime="2025-04">seit 04/2025</time>
           </article>
@@ -615,10 +616,23 @@
 
           <article class="experience-item">
             <div>
-              <h3>Verschiedene Tätigkeiten &amp; Studium</h3>
-              <p class="company">Kopenhagen · Augsburg</p>
+              <h3>Ehrenamtliche Tätigkeiten</h3>
+              <p class="company">Kopenhagen · Universität Kopenhagen · ActionAid Denmark</p>
+              <ul>
+                <li>Koordination des deutschsprachigen Tisches im Language Café im Studenterhuset</li>
+                <li>Empfang internationaler Gäste mit Check-in und Check-out, Kassenführung sowie gelegentliche Verantwortung für den abendlichen Hostelbetrieb</li>
+                <li>Mitarbeit im Café: Getränke zubereiten, Gäste betreuen sowie Öffnen und Schließen</li>
+              </ul>
             </div>
-            <time class="date" datetime="2022-02">02/2022 – 04/2023</time>
+            <time class="date" datetime="2022-02">02/2022 – 10/2022</time>
+          </article>
+
+          <article class="experience-item">
+            <div>
+              <h3>Studium (Sprachen)</h3>
+              <p class="company">Universität Augsburg</p>
+            </div>
+            <time class="date">2022–2023</time>
           </article>
         </div>
       </section>
@@ -733,7 +747,7 @@
       nav: ["experience", "projects", "profile", "contact"].map(key => get("navigation." + key)),
       hero: ["eyebrow", "title", "copy", "projects", "contact", "caption"].map(key => get("hero." + key)),
       facts: ["one.title", "one.copy", "two.title", "two.copy", "three.title", "three.copy"].map(key => get("facts." + key)),
-      experience: [get("experience.title"), get("experience.intro"), ...[1,2,3,4,5].map(i => get("experience.role."+i+".title")), ...[1,2,3,4,5].map(i => get("experience.role."+i+".company")), ...[1,2,3,4,5,6,7].map(i => get("experience.bullet."+i)), ...[1,2,3,4,5].map(i => get("experience.role."+i+".date")), get("experience.prototypeLink")],
+      experience: [get("experience.title"), get("experience.intro"), ...[1,2,3,4,5,6].map(i => get("experience.role."+i+".title")), ...[1,2,3,4,5,6].map(i => get("experience.role."+i+".company")), ...[1,2,3,4,5,6,7,8,9,10,11].map(i => get("experience.bullet."+i)), ...[1,2,3,4,5,6].map(i => get("experience.role."+i+".date")), get("experience.prototypeLink")],
       projects: [get("projects.title"), get("projects.intro"), ...["one.type","one.title","one.description","one.link","two.type","two.title","two.description","two.status"].map(k => get("project."+k))],
       profile: [get("profile.title"), get("profile.intro"), ...["education.label","education.copy","study.label","study.copy","technologies.label","technologies.copy","business.label","business.copy","project.label","project.copy","languages.label","languages.copy"].map(k => get("profile."+k))],
       contact: ["title","copy","button"].map(k => get("contact."+k)), footer: [get("footer.name"), get("footer.linkedin")]
@@ -775,7 +789,7 @@
         case "nav": values = [raw]; break;
         case "hero": values = raw.map(value => [value]); break;
         case "facts": values = [raw]; break;
-        case "experience": values = [[raw[0]], [raw[1]], raw.slice(2, 7), raw.slice(7, 12), [raw[12], raw[13], raw[14], raw[15], raw[16], raw[18]], raw.slice(19, 24), [raw[17]], [raw[24]]]; break;
+        case "experience": values = [[raw[0]], [raw[1]], raw.slice(2, 8), raw.slice(8, 14), [raw[14], raw[15], raw[16], raw[17], raw[18], raw[19], raw[21], raw[22], raw[23], raw[24]], raw.slice(25, 31), [raw[20]], [raw[31]]]; break;
         case "projects": values = [[raw[0]], [raw[1]], [raw[2], raw[6]], [raw[3], raw[7]], [raw[4], raw[8]], [raw[5]], [raw[9]]]; break;
         case "profile": values = [[raw[0]], [raw[1]], [raw[2], raw[4], raw[6], raw[8], raw[10], raw[12]], [raw[3], raw[5], raw[7], raw[9], raw[11], raw[13]]]; break;
         case "contact": values = raw.map(value => [value]); break;
