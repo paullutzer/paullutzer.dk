@@ -915,7 +915,14 @@
       .menu-icon::before, .menu-icon::after { display: none; content: none; }
        .menu-icon i { position: static; top: auto; left: auto; display: block; width: 18px; height: 1.5px; border-radius: 2px; background: currentColor; transform-origin: center; transition: transform 460ms cubic-bezier(.22, 1, .36, 1), opacity 240ms ease; }
       .menu-toggle[aria-expanded="true"] .menu-icon i:first-child { transform: translateY(5.25px) rotate(45deg); }
-      .menu-toggle[aria-expanded="true"] .menu-icon i:last-child { transform: translateY(-5.25px) rotate(-45deg); }
+      .menu-icon { position: relative; display: block; width: 18px; height: 14px; }
+      .menu-icon::before,
+      .menu-icon::after { position: absolute; left: 0; display: block; width: 18px; height: 1.5px; border-radius: 2px; background: var(--ink); content: ""; transform-origin: center; transition: transform 460ms cubic-bezier(.22, 1, .36, 1), top 460ms cubic-bezier(.22, 1, .36, 1); }
+      .menu-icon::before { top: 3px; }
+      .menu-icon::after { top: 10px; }
+      .menu-icon i { display: none; }
+      .menu-toggle[aria-expanded="true"] .menu-icon::before { top: 6.5px; transform: rotate(45deg); }
+      .menu-toggle[aria-expanded="true"] .menu-icon::after { top: 6.5px; transform: rotate(-45deg); }
       .navigation { position: fixed; z-index: 29; inset: 0; width: 100%; height: 100vh; height: 100dvh; max-height: none; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; overflow-y: auto; overscroll-behavior: contain; padding: max(96px, calc(env(safe-area-inset-top) + 80px)) max(28px, calc((100vw - 560px) / 2)) calc(32px + env(safe-area-inset-bottom)); border: 0; background: #fff; box-shadow: none; -webkit-backdrop-filter: saturate(180%) blur(24px); backdrop-filter: saturate(180%) blur(24px); opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-10px); transition: opacity 380ms ease, transform 520ms cubic-bezier(.22, 1, .36, 1), visibility 0s linear 520ms; }
       body.menu-open .navigation { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); transition-delay: 0s; }
       .navigation a { display: flex; min-height: 76px; flex: 0 0 auto; align-items: center; padding: 12px 0; border: 0; border-bottom: 1px solid var(--line); color: var(--ink); font-size: clamp(26px, 7vw, 34px); font-weight: 500; letter-spacing: -.035em; opacity: 0; transform: translateY(-8px); transition: opacity 240ms ease, transform 360ms cubic-bezier(.22, 1, .36, 1); }
