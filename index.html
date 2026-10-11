@@ -1266,6 +1266,8 @@
   const menu = document.getElementById("language-menu");
   const menuToggle = document.getElementById("menu-toggle");
   const mainNavigation = document.getElementById("main-navigation");
+  const navigationPlaceholder = document.createComment("mobile navigation position");
+  mainNavigation.parentNode.insertBefore(navigationPlaceholder, mainNavigation);
   const options = [...document.querySelectorAll(".language-option")];
   let initial = "de";
   try { initial = localStorage.getItem("paullutzer-language") || "de"; } catch (_) {}
@@ -1282,10 +1284,14 @@
     menuToggle.setAttribute("aria-expanded", "false");
     menuToggle.setAttribute("aria-label", menuToggle.dataset.openLabel);
     mainNavigation.setAttribute("aria-hidden", String(mobileMenuQuery.matches));
+    if (mainNavigation.parentNode === document.body) {
+      navigationPlaceholder.parentNode.insertBefore(mainNavigation, navigationPlaceholder.nextSibling);
+    }
     if (restoreFocus) menuToggle.focus();
   }
   function openNavigation() {
     closeMenu();
+    if (mobileMenuQuery.matches) document.body.appendChild(mainNavigation);
     document.body.classList.add("menu-open");
     menuToggle.setAttribute("aria-expanded", "true");
     menuToggle.setAttribute("aria-label", menuToggle.dataset.closeLabel);
